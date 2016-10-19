@@ -1,17 +1,30 @@
 @import "https://fonts.googleapis.com/css?family=Roboto+Condensed";
 html, body {
   font-family: 'Roboto Condensed', sans-serif;
-  background-color: #CFD8DC;
+  background-color: #F5F5F5;
   margin: 0;
   width: 100%; }
 
-h1 {
-  font-size: 1.8em;
-  padding: 0.8em;
-  margin: 0;
+#toolbar {
+  padding: 0.5em;
   color: #E0E0E0;
   background-color: #263238;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center; }
+  #toolbar h1 {
+    font-size: 1.5em;
+    padding: 0.5em;
+    margin: 0;
+    flex: 1;
+    float: none; }
+  #toolbar input {
+    margin: 0;
+    width: 2.5em;
+    height: 2.5em;
+    outline: none; }
 
 .table {
   width: 100%;
@@ -40,9 +53,9 @@ h1 {
     background-color: #6d1ecf; }
 
 .transition-metal {
-  background-color: #E65100; }
+  background-color: #827717; }
   .transition-metal:hover {
-    background-color: #ff7b34; }
+    background-color: #c3b323; }
 
 .unknown {
   background-color: #455A64; }
@@ -65,9 +78,9 @@ h1 {
     background-color: #009a80; }
 
 .halogen {
-  background-color: #827717; }
+  background-color: #33691E; }
   .halogen:hover {
-    background-color: #c3b323; }
+    background-color: #50a52f; }
 
 .noble-gas {
   background-color: #1B5E20; }
@@ -80,9 +93,9 @@ h1 {
     background-color: #1366e8; }
 
 .actinoid {
-  background-color: #01579B; }
+  background-color: #006064; }
   .actinoid:hover {
-    background-color: #0182e7; }
+    background-color: #00a9b1; }
 
 .metalloid {
   background-color: #1A237E; }

@@ -2,18 +2,19 @@
 
 $light-grey: #E0E0E0;
 $dark-blue-grey: #263238;
-$light-blue-grey: #CFD8DC;
+$light-blue-grey: #F5F5F5;
 
 $blue-grey: #455A64;
 $purple: #4A148C;
 $red: #b71c1c;
 $deep-orange: #BF360C;
 $green: #1B5E20;
+$light-green: #33691E;
 $lime: #827717;
 $teal: #004D40;
 $orange: #E65100;
 $indigo: #1A237E;
-$light-blue: #01579B;
+$cyan: #006064;
 $blue: #0D47A1;
 
 $lighten: 15%;
@@ -26,15 +27,32 @@ html, body {
   width: 100%;
 }
 
-h1 {
-  font-size: 1.8em;
-  padding: 0.8em;
-  margin: 0;
+#toolbar {
+  padding: 0.5em;
 
   color: $light-grey;
   background-color: $dark-blue-grey;
-
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  align-items:center;
+
+  h1 {
+    font-size: 1.5em;
+    padding: 0.5em;
+    margin: 0;
+    flex: 1;
+    float: none;
+  }
+
+  input {
+    margin: 0;
+    width: 2.5em;
+    height: 2.5em;
+    outline: none;
+  }
 }
 
 .table {
@@ -78,9 +96,9 @@ h1 {
 }
 
 .transition-metal {
-  background-color: $orange;
+  background-color: $lime;
   &:hover {
-    background-color: lighten($orange, $lighten);
+    background-color: lighten($lime, $lighten);
   }
 }
 
@@ -113,9 +131,9 @@ h1 {
 }
 
 .halogen {
-  background-color: $lime;
+  background-color: $light-green;
   &:hover {
-    background-color: lighten($lime, $lighten);
+    background-color: lighten($light-green, $lighten);
   }
 }
 
@@ -134,9 +152,9 @@ h1 {
 }
 
 .actinoid {
-  background-color: $light-blue;
+  background-color: $cyan;
   &:hover {
-    background-color: lighten($light-blue, $lighten);
+    background-color: lighten($cyan, $lighten);
   }
 }
 

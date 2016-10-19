@@ -14,7 +14,7 @@ function createWindow () {
 
   win.setMenu(null)
 
-  //win.toggleDevTools()
+  win.toggleDevTools()
 
   win.maximize()
 
