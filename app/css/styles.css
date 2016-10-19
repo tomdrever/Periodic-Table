@@ -1,0 +1,92 @@
+@import "https://fonts.googleapis.com/css?family=Roboto+Condensed";
+html, body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #CFD8DC;
+  margin: 0;
+  width: 100%; }
+
+h1 {
+  font-size: 1.8em;
+  padding: 0.8em;
+  margin: 0;
+  color: #E0E0E0;
+  background-color: #263238;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+.table {
+  width: 100%;
+  border: none;
+  padding: 1em 3em 1em 3em;
+  border-spacing: 0.5em 0.5em; }
+  .table .cell {
+    width: 1.8em;
+    height: 2.8em; }
+  .table .element {
+    font-size: 1.1em;
+    text-align: center;
+    color: #E0E0E0;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+    .table .element:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  .table .empty {
+    border: none; }
+
+.nonmetal {
+  background-color: #4A148C; }
+  .nonmetal:hover {
+    background-color: #6d1ecf; }
+
+.transition-metal {
+  background-color: #E65100; }
+  .transition-metal:hover {
+    background-color: #ff7b34; }
+
+.unknown {
+  background-color: #455A64; }
+  .unknown:hover {
+    background-color: #648391; }
+
+.alkali-metal {
+  background-color: #b71c1c; }
+  .alkali-metal:hover {
+    background-color: #e13e3e; }
+
+.alkaline-earth-metal {
+  background-color: #BF360C; }
+  .alkaline-earth-metal:hover {
+    background-color: #f15626; }
+
+.other-metal {
+  background-color: #004D40; }
+  .other-metal:hover {
+    background-color: #009a80; }
+
+.halogen {
+  background-color: #827717; }
+  .halogen:hover {
+    background-color: #c3b323; }
+
+.noble-gas {
+  background-color: #1B5E20; }
+  .noble-gas:hover {
+    background-color: #2c9934; }
+
+.lanthanoid {
+  background-color: #0D47A1; }
+  .lanthanoid:hover {
+    background-color: #1366e8; }
+
+.actinoid {
+  background-color: #01579B; }
+  .actinoid:hover {
+    background-color: #0182e7; }
+
+.metalloid {
+  background-color: #1A237E; }
+  .metalloid:hover {
+    background-color: #2735bd; }
+
+/*# sourceMappingURL=styles.css.map */

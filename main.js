@@ -14,7 +14,9 @@ function createWindow () {
 
   win.setMenu(null)
 
-  win.toggleDevTools()
+  //win.toggleDevTools()
+
+  win.maximize()
 
   // and load the index.html of the app.
   win.loadURL(`file://${__dirname}/app/index.html`)

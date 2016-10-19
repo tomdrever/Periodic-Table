@@ -1,18 +1,24 @@
 const fs = require('fs')
 
-// Read data from file
-var data = fs.readFileSync('layout.txt', 'utf8')
-console.log(data)
+// Create map of types and classnames for colouring based off of types
+var typeMap = new Map()
+typeMap["Nonmetal"] = "nonmetal"
+typeMap["Metalloid"] = "metalloid"
+typeMap["Other metal"] = "other-metal"
+typeMap["Transition metal"] = "transition-metal"
+typeMap["Unknown"] = "unknown"
+typeMap["Alkali metal"] = "alkali-metal"
+typeMap["Alkaline earth metal"] = "alkaline-earth-metal"
+typeMap["Lanthanoid"] = "lanthanoid"
+typeMap["Actinoid"] = "actinoid"
+typeMap["Noble gas"] = "noble-gas"
+typeMap["Halogen"] = "halogen"
 
-// Convert the data into lines (each line a string)
-var lines = data.split("\n")
+// Get elements data
+var elements = JSON.parse(fs.readFileSync('elements.json', 'utf8'))
 
-// Remove trailing or empty lines
-for (i = 0; i < lines.length; i++) {
-  if (lines[i] === "") {
-    lines.splice(i, 1)
-  }
-}
+// Read lines from layout file
+var lines = JSON.parse(fs.readFileSync('layout.json', 'utf8'))
 
 // Create table and load element data and create element
 var body = document.getElementsByTagName('body')[0]
@@ -32,23 +38,30 @@ for (var i = 0; i < lines.length; i++) {
   for (var j = 0; j < line.length; j++) {
 
     // Create cell
-    var tcell = document.createElement('td')
-
-    tcell.className += " tablecell"
-
-    if (line[j] != 0) { // Normal cell
-      tcell.appendChild(document.createTextNode(line[j]))
-      tcell.className += " element"
-    } else { // Empty space
-      tcell.className += " empty"
-    }
+    var tcell = newCell(parseInt(line[j]))
 
     trow.appendChild(tcell)
   }
 
   tbody.appendChild(trow)
-  console.log(trow)
 }
 
 table.appendChild(tbody)
 body.appendChild(table)
+
+function newCell(index) {
+
+  var tcell = document.createElement('td')
+
+  tcell.className += " cell"
+
+  if (index != 0) { // Normal cell
+    var element = elements[index-1]
+    tcell.appendChild(document.createTextNode(element.Symbol))
+    tcell.className += " element " + typeMap[element.Type]
+  } else { // Empty space
+    tcell.className += " empty"
+  }
+
+  return tcell;
+}
