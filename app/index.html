@@ -9,7 +9,19 @@
       <!--TODO-custom (materialesque) title bar-->
       <div id="toolbar">
         <h1> Periodic Table </h1>
-        <input type="image" src="res/settings_icon.png" alt="Settings"></input>
+        <div id="options-dropdown-container">
+          <input id="options-btn" type="image" src="res/settings_icon.png" alt="Settings" onclick="onOptionsClicked()"></input>
+          <div id="options-dropdown" class="dropdown">
+            <div class="dropdown-item" onclick="onColourByTypeClicked()">
+              <img id="colour-by-type-done" class="dropdown-done" src="res/done_icon.png"></img>
+              <span>Colour by type</span>
+            </div>
+            <div class="dropdown-item" onclick="onColourByBlockClicked()">
+              <img id="colour-by-block-done" class="dropdown-done" src="res/done_icon.png"></img>
+              <span>Colour by block</span>
+            </div>
+          </div>
+        </div>
       </div>
       <script src="js\index.js"></script>
   </body>

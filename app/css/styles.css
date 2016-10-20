@@ -20,11 +20,45 @@ html, body {
     margin: 0;
     flex: 1;
     float: none; }
-  #toolbar input {
-    margin: 0;
-    width: 2.5em;
-    height: 2.5em;
-    outline: none; }
+  #toolbar #options-dropdown-container {
+    position: relative;
+    display: inline-block; }
+    #toolbar #options-dropdown-container #options-btn {
+      margin: 0;
+      width: 2.5em;
+      height: 2.5em;
+      outline: none; }
+    #toolbar #options-dropdown-container .dropdown {
+      display: none;
+      position: absolute;
+      overflow: auto;
+      min-width: 13em;
+      min-height: 14em;
+      left: -11em;
+      background-color: #F5F5F5;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      overflow-x: hidden; }
+      #toolbar #options-dropdown-container .dropdown .dropdown-item {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 0.8em 0 0.8em 1em;
+        cursor: pointer; }
+        #toolbar #options-dropdown-container .dropdown .dropdown-item .dropdown-done {
+          display: inline-block;
+          visibility: hidden;
+          width: 1.8em;
+          height: 1.8em;
+          padding-right: 0.8em; }
+        #toolbar #options-dropdown-container .dropdown .dropdown-item span {
+          color: #212121;
+          font-size: 1.2em; }
+        #toolbar #options-dropdown-container .dropdown .dropdown-item:hover {
+          background-color: #c7c7c7; }
+        #toolbar #options-dropdown-container .dropdown .dropdown-item .icon-visible {
+          visibility: visible; }
+    #toolbar #options-dropdown-container .show {
+      display: inline-block; }
 
 .table {
   width: 100%;
@@ -50,56 +84,76 @@ html, body {
 .nonmetal {
   background-color: #4A148C; }
   .nonmetal:hover {
-    background-color: #6d1ecf; }
+    background-color: #741fdc; }
 
 .transition-metal {
   background-color: #827717; }
   .transition-metal:hover {
-    background-color: #c3b323; }
+    background-color: #d0be25; }
 
 .unknown {
   background-color: #455A64; }
   .unknown:hover {
-    background-color: #648391; }
+    background-color: #6c8b99; }
 
 .alkali-metal {
   background-color: #b71c1c; }
   .alkali-metal:hover {
-    background-color: #e13e3e; }
+    background-color: #e44b4b; }
 
 .alkaline-earth-metal {
   background-color: #BF360C; }
   .alkaline-earth-metal:hover {
-    background-color: #f15626; }
+    background-color: #f26135; }
 
 .other-metal {
   background-color: #004D40; }
   .other-metal:hover {
-    background-color: #009a80; }
+    background-color: #00a98c; }
 
 .halogen {
   background-color: #33691E; }
   .halogen:hover {
-    background-color: #50a52f; }
+    background-color: #56b032; }
 
 .noble-gas {
   background-color: #1B5E20; }
   .noble-gas:hover {
-    background-color: #2c9934; }
+    background-color: #2fa538; }
 
 .lanthanoid {
   background-color: #0D47A1; }
   .lanthanoid:hover {
-    background-color: #1366e8; }
+    background-color: #1d6eed; }
 
 .actinoid {
   background-color: #006064; }
   .actinoid:hover {
-    background-color: #00a9b1; }
+    background-color: #00b8c0; }
 
 .metalloid {
   background-color: #1A237E; }
   .metalloid:hover {
-    background-color: #2735bd; }
+    background-color: #2a38ca; }
+
+.p-block {
+  background-color: #827717; }
+  .p-block:hover {
+    background-color: #d0be25; }
+
+.d-block {
+  background-color: #1B5E20; }
+  .d-block:hover {
+    background-color: #2fa538; }
+
+.s-block {
+  background-color: #0D47A1; }
+  .s-block:hover {
+    background-color: #1d6eed; }
+
+.f-block {
+  background-color: #4A148C; }
+  .f-block:hover {
+    background-color: #741fdc; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -452,7 +452,7 @@
     "AtomicMass": 138.9,
     "Name": "Lanthanum",
     "Symbol": "La",
-    "Block": "f",
+    "Block": "d",
     "Type": "Lanthanoid"
   },
   {
@@ -468,7 +468,7 @@
     "AtomicMass": 140.9,
     "Name": "Praseodymium",
     "Symbol": "Pr",
-    "Block": "",
+    "Block": "f",
     "Type": "Lanthanoid"
   },
   {
@@ -708,7 +708,7 @@
     "AtomicMass": 227,
     "Name": "Actinium",
     "Symbol": "Ac",
-    "Block": "f",
+    "Block": "d",
     "Type": "Actinoid"
   },
   {
