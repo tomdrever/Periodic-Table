@@ -12,6 +12,7 @@
     text-align: center;
     color: #E0E0E0;
     padding: 0;
+    padding-bottom: 0.15em;
     cursor: pointer;
     border-radius: 2px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -106,6 +107,21 @@
   background-color: #6A1B9A; }
   .f-block:hover {
     background-color: #8823c5; }
+
+.gas {
+  background-color: #c62828; }
+  .gas:hover {
+    background-color: #da4747; }
+
+.liquid {
+  background-color: #1565C0; }
+  .liquid:hover {
+    background-color: #217ee7; }
+
+.solid {
+  background-color: #2E7D32; }
+  .solid:hover {
+    background-color: #3ca241; }
 
 html, body {
   font-family: 'Roboto Condensed', sans-serif;

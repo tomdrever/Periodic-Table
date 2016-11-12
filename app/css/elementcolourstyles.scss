@@ -104,3 +104,24 @@
     background-color: lighten($purple, $lighten);
   }
 }
+
+.gas {
+  background-color: $red;
+  &:hover {
+    background-color: lighten($red, $lighten);
+  }
+}
+
+.liquid {
+  background-color: $blue;
+  &:hover {
+    background-color: lighten($blue, $lighten);
+  }
+}
+
+.solid {
+  background-color: $green;
+  &:hover {
+    background-color: lighten($green, $lighten);
+  }
+}

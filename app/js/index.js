@@ -6,6 +6,7 @@ const cellGenerator = require('./js/cellgenerator')
 
 var typeMap = maps.getTypeMap()
 var blockMap = maps.getBlockMap()
+var stateMap = maps.getStateMap()
 
 // Get elements data
 var elements = JSON.parse(fs.readFileSync('elements.json', 'utf8'))
@@ -16,14 +17,14 @@ var lines = JSON.parse(fs.readFileSync('layout.json', 'utf8'))
 // Create table and load element data and create element
 var body = document.getElementsByTagName('body')[0]
 var table = document.createElement('table')
-table.className += " table"
+table.classList.add("table")
 
 var tbody = document.createElement('tbody')
 tbody.id = "tbody"
 
 for (var i = 0; i < lines.length; i++) {
 
-  // Creat row
+  // Create row
   var trow = document.createElement('tr')
   // Split line(string) into array of ints
   var line = lines[i].split(',')
@@ -43,7 +44,7 @@ table.appendChild(tbody)
 body.appendChild(table)
 
 // Initial colouring
-onColourByBlockClicked()
+onColourByStateClicked()
 
 function newCell(index) {
 
@@ -57,7 +58,6 @@ function newCell(index) {
   } else { // Empty space
     tcell.classList.add("empty")
   }
-
   return tcell;
 }
 
@@ -88,12 +88,22 @@ function onColourByBlockClicked() {
 
    document.getElementById("colour-by-block-done").classList.add("icon-visible")
    document.getElementById("colour-by-type-done").classList.remove("icon-visible")
+   document.getElementById("colour-by-state-done").classList.remove("icon-visible")
  }
 
 function onColourByTypeClicked() {
   toggleColourClass("type")
 
   document.getElementById("colour-by-type-done").classList.add("icon-visible")
+  document.getElementById("colour-by-state-done").classList.remove("icon-visible")
+  document.getElementById("colour-by-block-done").classList.remove("icon-visible")
+}
+
+function onColourByStateClicked() {
+  toggleColourClass("state")
+
+  document.getElementById("colour-by-state-done").classList.add("icon-visible")
+  document.getElementById("colour-by-type-done").classList.remove("icon-visible")
   document.getElementById("colour-by-block-done").classList.remove("icon-visible")
 }
 
@@ -110,19 +120,25 @@ function toggleColourClass(classType) {
       if (!cell.classList.contains("empty")) {
         var elementType = cell.getAttribute("element-type")
         var elementBlock = cell.getAttribute("element-block")
+        var elementState = cell.getAttribute("element-state")
 
-        var toRemove, toAdd
+        var toRemoveArray, toAdd
 
         if (classType === "type") {
-          toRemove = blockMap[elementBlock]
+          toRemoveArray = [blockMap[elementBlock], stateMap[elementState]]
           toAdd = typeMap[elementType]
+        } else if (classType === "state") {
+          toRemoveArray = [blockMap[elementBlock], typeMap[elementType]]
+          toAdd = stateMap[elementState]
         } else {
-          toRemove = typeMap[elementType]
+          toRemoveArray = [typeMap[elementType], stateMap[elementState]]
           toAdd = blockMap[elementBlock]
         }
 
-        if (cell.classList.contains(toRemove)) {
-          cell.classList.remove(toRemove)
+        for (var k = 0; k < toRemoveArray.length; k++) {
+          if (cell.classList.contains(toRemoveArray[k])) {
+            cell.classList.remove(toRemoveArray[k])
+          }
         }
 
         if (!cell.classList.contains(toAdd)) {

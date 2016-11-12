@@ -4,6 +4,7 @@ module.exports = {
     cell.classList.add("element")
     cell.setAttribute("element-type", element.Type)
     cell.setAttribute("element-block", element.Block)
+    cell.setAttribute("element-state", element.State)
 
     // Element-cell details layout
     var cellHeader = document.createElement("DIV")
@@ -17,7 +18,7 @@ module.exports = {
     var atomicMassText = document.createElement("P")
     atomicMassText.classList.add("element-cell-text-item")
     if (element.AtomicMass != null) {
-      atomicMassText.appendChild(document.createTextNode(element.AtomicMass))      
+      atomicMassText.appendChild(document.createTextNode(element.AtomicMass))
     }
     cellHeader.appendChild(atomicMassText)
 

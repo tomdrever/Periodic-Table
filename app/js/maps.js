@@ -18,7 +18,10 @@ blockMap['d'] = "d-block"
 blockMap['s'] = "s-block"
 blockMap['f'] = "f-block"
 
-
+var stateMap = new Map()
+stateMap["Gas"] = "gas"
+stateMap["Liquid"] = "liquid"
+stateMap["Solid"] = "solid"
 
 module.exports = {
   getBlockMap: function() {
@@ -27,5 +30,9 @@ module.exports = {
 
   getTypeMap: function() {
     return typeMap
+  },
+
+  getStateMap: function() {
+    return stateMap
   }
 }
