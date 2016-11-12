@@ -1,0 +1,97 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed';
+
+@import 'tablestyles.scss';
+
+@import 'vars.scss';
+
+@import 'elementcolourstyles.scss';
+
+html, body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: $light-blue-grey;
+
+  margin: 0;
+  width: 100%;
+}
+
+#toolbar {
+  padding: 0.5em;
+
+  color: $light-grey;
+  background-color: $dark-blue-grey;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  align-items:center;
+
+  h1 {
+    font-size: 1.5em;
+    padding: 0.5em;
+    margin: 0;
+    flex: 1;
+    float: none;
+  }
+
+  #options-dropdown-container {
+    position: relative;
+    display: inline-block;
+
+    #options-btn {
+      margin: 0;
+      width: 2.5em;
+      height: 2.5em;
+      outline: none;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      overflow: auto;
+
+      min-width: 13em;
+      min-height: 14em;
+      left: -11em;
+
+      background-color: $light-blue-grey;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      border-radius: 2px;
+
+      overflow-x: hidden;
+
+      .dropdown-item {
+        height: 100%;
+
+        display: flex;
+        flex-direction: row;
+
+        padding: 0.8em 0 0.8em 1em;
+        cursor: pointer;
+
+        .dropdown-done {
+          display: inline-block;
+          visibility: hidden;
+
+          width: 1.8em;
+          height: 1.8em;
+
+          padding-right: 0.8em;
+        }
+
+        span {
+          color: $text-grey;
+          font-size: 1.2em;
+        }
+
+        &:hover {
+          background-color: darken($light-blue-grey, $lighten);
+        }
+
+        .icon-visible { visibility: visible}
+      }
+    }
+
+    .show { display: inline-block;}
+  }
+}

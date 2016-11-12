@@ -1,24 +1,11 @@
 const fs = require('fs')
 
-// Create map of types and classnames for colouring based off of types
-var typeMap = new Map()
-typeMap["Nonmetal"] = "nonmetal"
-typeMap["Metalloid"] = "metalloid"
-typeMap["Other metal"] = "other-metal"
-typeMap["Transition metal"] = "transition-metal"
-typeMap["Unknown"] = "unknown"
-typeMap["Alkali metal"] = "alkali-metal"
-typeMap["Alkaline earth metal"] = "alkaline-earth-metal"
-typeMap["Lanthanoid"] = "lanthanoid"
-typeMap["Actinoid"] = "actinoid"
-typeMap["Noble gas"] = "noble-gas"
-typeMap["Halogen"] = "halogen"
+const maps = require('./js/maps')
 
-var blockMap = new Map()
-blockMap['p'] = "p-block"
-blockMap['d'] = "d-block"
-blockMap['s'] = "s-block"
-blockMap['f'] = "f-block"
+const cellGenerator = require('./js/cellgenerator')
+
+var typeMap = maps.getTypeMap()
+var blockMap = maps.getBlockMap()
 
 // Get elements data
 var elements = JSON.parse(fs.readFileSync('elements.json', 'utf8'))
@@ -55,6 +42,7 @@ for (var i = 0; i < lines.length; i++) {
 table.appendChild(tbody)
 body.appendChild(table)
 
+// Initial colouring
 onColourByBlockClicked()
 
 function newCell(index) {
@@ -65,10 +53,7 @@ function newCell(index) {
 
   if (index != 0) { // Normal cell
     var element = elements[index-1]
-    tcell.appendChild(document.createTextNode(element.Symbol))
-    tcell.classList.add("element")
-    tcell.setAttribute("element-type", element.Type)
-    tcell.setAttribute("element-block", element.Block)
+    cellGenerator.createNewElementCell(tcell, element)
   } else { // Empty space
     tcell.classList.add("empty")
   }

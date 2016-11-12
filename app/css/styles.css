@@ -1,4 +1,112 @@
 @import "https://fonts.googleapis.com/css?family=Roboto+Condensed";
+.table {
+  width: 100%;
+  border: none;
+  padding: 1em 2em 1em 2em;
+  border-spacing: 0.5em 0.5em; }
+  .table .cell {
+    width: 1.8em;
+    height: 2.8em; }
+  .table .element {
+    font-size: 1.1em;
+    text-align: center;
+    color: #E0E0E0;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+    .table .element:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+    .table .element p {
+      font-size: 0.6rem; }
+    .table .element h1 {
+      font-size: 1.3rem; }
+    .table .element .element-cell-text-item {
+      vertical-align: middle;
+      display: inline-block;
+      margin: auto; }
+    .table .element .element-cell-row {
+      display: flex;
+      justify-content: space-between; }
+  .table .empty {
+    border: none; }
+
+.nonmetal {
+  background-color: #6A1B9A; }
+  .nonmetal:hover {
+    background-color: #8823c5; }
+
+.transition-metal {
+  background-color: #F57C00; }
+  .transition-metal:hover {
+    background-color: #ff9529; }
+
+.unknown {
+  background-color: #37474F; }
+  .unknown:hover {
+    background-color: #4c626d; }
+
+.alkali-metal {
+  background-color: #c62828; }
+  .alkali-metal:hover {
+    background-color: #da4747; }
+
+.alkaline-earth-metal {
+  background-color: #D84315; }
+  .alkaline-earth-metal:hover {
+    background-color: #eb6035; }
+
+.other-metal {
+  background-color: #00695C; }
+  .other-metal:hover {
+    background-color: #009c89; }
+
+.halogen {
+  background-color: #558B2F; }
+  .halogen:hover {
+    background-color: #6cb13c; }
+
+.noble-gas {
+  background-color: #2E7D32; }
+  .noble-gas:hover {
+    background-color: #3ca241; }
+
+.lanthanoid {
+  background-color: #1565C0; }
+  .lanthanoid:hover {
+    background-color: #217ee7; }
+
+.actinoid {
+  background-color: #00838F; }
+  .actinoid:hover {
+    background-color: #00b2c2; }
+
+.metalloid {
+  background-color: #283593; }
+  .metalloid:hover {
+    background-color: #3343bb; }
+
+.p-block {
+  background-color: #F57C00; }
+  .p-block:hover {
+    background-color: #ff9529; }
+
+.d-block {
+  background-color: #2E7D32; }
+  .d-block:hover {
+    background-color: #3ca241; }
+
+.s-block {
+  background-color: #1565C0; }
+  .s-block:hover {
+    background-color: #217ee7; }
+
+.f-block {
+  background-color: #6A1B9A; }
+  .f-block:hover {
+    background-color: #8823c5; }
+
 html, body {
   font-family: 'Roboto Condensed', sans-serif;
   background-color: #F5F5F5;
@@ -37,6 +145,7 @@ html, body {
       left: -11em;
       background-color: #F5F5F5;
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      border-radius: 2px;
       overflow-x: hidden; }
       #toolbar #options-dropdown-container .dropdown .dropdown-item {
         height: 100%;
@@ -54,106 +163,10 @@ html, body {
           color: #212121;
           font-size: 1.2em; }
         #toolbar #options-dropdown-container .dropdown .dropdown-item:hover {
-          background-color: #c7c7c7; }
+          background-color: gainsboro; }
         #toolbar #options-dropdown-container .dropdown .dropdown-item .icon-visible {
           visibility: visible; }
     #toolbar #options-dropdown-container .show {
       display: inline-block; }
-
-.table {
-  width: 100%;
-  border: none;
-  padding: 1em 3em 1em 3em;
-  border-spacing: 0.5em 0.5em; }
-  .table .cell {
-    width: 1.8em;
-    height: 2.8em; }
-  .table .element {
-    font-size: 1.1em;
-    text-align: center;
-    color: #E0E0E0;
-    cursor: pointer;
-    border-radius: 2px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
-    .table .element:hover {
-      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
-  .table .empty {
-    border: none; }
-
-.nonmetal {
-  background-color: #4A148C; }
-  .nonmetal:hover {
-    background-color: #741fdc; }
-
-.transition-metal {
-  background-color: #827717; }
-  .transition-metal:hover {
-    background-color: #d0be25; }
-
-.unknown {
-  background-color: #455A64; }
-  .unknown:hover {
-    background-color: #6c8b99; }
-
-.alkali-metal {
-  background-color: #b71c1c; }
-  .alkali-metal:hover {
-    background-color: #e44b4b; }
-
-.alkaline-earth-metal {
-  background-color: #BF360C; }
-  .alkaline-earth-metal:hover {
-    background-color: #f26135; }
-
-.other-metal {
-  background-color: #004D40; }
-  .other-metal:hover {
-    background-color: #00a98c; }
-
-.halogen {
-  background-color: #33691E; }
-  .halogen:hover {
-    background-color: #56b032; }
-
-.noble-gas {
-  background-color: #1B5E20; }
-  .noble-gas:hover {
-    background-color: #2fa538; }
-
-.lanthanoid {
-  background-color: #0D47A1; }
-  .lanthanoid:hover {
-    background-color: #1d6eed; }
-
-.actinoid {
-  background-color: #006064; }
-  .actinoid:hover {
-    background-color: #00b8c0; }
-
-.metalloid {
-  background-color: #1A237E; }
-  .metalloid:hover {
-    background-color: #2a38ca; }
-
-.p-block {
-  background-color: #827717; }
-  .p-block:hover {
-    background-color: #d0be25; }
-
-.d-block {
-  background-color: #1B5E20; }
-  .d-block:hover {
-    background-color: #2fa538; }
-
-.s-block {
-  background-color: #0D47A1; }
-  .s-block:hover {
-    background-color: #1d6eed; }
-
-.f-block {
-  background-color: #4A148C; }
-  .f-block:hover {
-    background-color: #741fdc; }
 
 /*# sourceMappingURL=styles.css.map */

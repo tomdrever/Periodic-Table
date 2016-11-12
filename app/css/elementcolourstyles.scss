@@ -1,0 +1,106 @@
+@import 'vars.scss';
+
+.nonmetal {
+  background-color: $purple;
+  &:hover {
+    background-color: lighten($purple, $lighten);
+  }
+}
+
+.transition-metal {
+  background-color: $amber;
+  &:hover {
+    background-color: lighten($amber, $lighten);
+  }
+}
+
+.unknown {
+  background-color: $blue-grey;
+  &:hover {
+    background-color: lighten($blue-grey, $lighten);
+  }
+}
+
+.alkali-metal {
+  background-color: $red;
+  &:hover {
+    background-color: lighten($red, $lighten);
+  }
+}
+
+.alkaline-earth-metal {
+  background-color: $deep-orange;
+  &:hover {
+    background-color: lighten($deep-orange, $lighten);
+  }
+}
+
+.other-metal {
+  background-color: $teal;
+  &:hover {
+    background-color: lighten($teal, $lighten);
+  }
+}
+
+.halogen {
+  background-color: $light-green;
+  &:hover {
+    background-color: lighten($light-green, $lighten);
+  }
+}
+
+.noble-gas {
+  background-color: $green;
+  &:hover {
+    background-color: lighten($green, $lighten);
+  }
+}
+
+.lanthanoid {
+  background-color: $blue;
+  &:hover {
+    background-color: lighten($blue, $lighten);
+  }
+}
+
+.actinoid {
+  background-color: $cyan;
+  &:hover {
+    background-color: lighten($cyan, $lighten);
+  }
+}
+
+.metalloid {
+  background-color: $indigo;
+  &:hover {
+    background-color: lighten($indigo, $lighten);
+  }
+}
+
+.p-block {
+  background-color: $amber;
+  &:hover {
+    background-color: lighten($amber, $lighten);
+  }
+}
+
+.d-block {
+  background-color: $green;
+  &:hover {
+    background-color: lighten($green, $lighten);
+  }
+}
+
+.s-block {
+  background-color: $blue;
+  &:hover {
+    background-color: lighten($blue, $lighten);
+  }
+}
+
+.f-block {
+  background-color: $purple;
+  &:hover {
+    background-color: lighten($purple, $lighten);
+  }
+}
