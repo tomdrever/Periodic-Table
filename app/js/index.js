@@ -46,6 +46,13 @@ body.appendChild(table)
 // Initial colouring
 onColourByStateClicked()
 
+// Event listener for escape key for element modal
+document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' || event.keyCode === 27) {
+        document.getElementById("modal").remove()
+    }
+});
+
 function newCell(index) {
 
   var tcell = document.createElement('td')

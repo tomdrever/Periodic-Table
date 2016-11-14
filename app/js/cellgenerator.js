@@ -33,5 +33,33 @@ module.exports = {
     cellBody.appendChild(symbolText)
 
     cell.appendChild(cellBody)
+
+    // Element info modal dialog
+    cell.onclick = function() {
+      // Add basic modal HMTL
+      var modal = document.createElement("DIV")
+      modal.classList.add("modal")
+      modal.id = "modal"
+
+      var modalContent = document.createElement("DIV")
+      modalContent.classList.add("modal-content")
+
+      var modalContentText = document.createElement("P")
+      modalContentText.appendChild(document.createTextNode("Element: " + element.Name))
+
+      var modalContentClose = document.createElement("SPAN")
+      modalContentClose.classList.add("modal-close")
+      modalContentClose.appendChild(document.createTextNode("x"))
+      modalContentClose.onclick = function() {
+        var modalToRemove = document.getElementById("modal")
+        modalToRemove.remove()
+      }
+
+      // Compile modal DOM elements and add to document
+      modalContent.appendChild(modalContentClose)
+      modalContent.appendChild(modalContentText)
+      modal.appendChild(modalContent)
+      document.getElementsByTagName('body')[0].appendChild(modal)
+    }
   }
 }
