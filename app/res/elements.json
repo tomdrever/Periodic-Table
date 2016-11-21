@@ -509,7 +509,7 @@
     "Name": "Lanthanum",
     "Symbol": "La",
     "Block": "d",
-    "Type": "Lanthanoid",
+    "Type": "Lanthanide",
     "State": "Solid"
   },
   {
@@ -518,7 +518,7 @@
     "Name": "Cerium",
     "Symbol": "Ce",
     "Block": "f",
-    "Type": "Lanthanoid",
+    "Type": "Lanthanide",
     "State": "Solid"
   },
   {
@@ -527,7 +527,7 @@
     "Name": "Praseodymium",
     "Symbol": "Pr",
     "Block": "f",
-    "Type": "Lanthanoid",
+    "Type": "Lanthanide",
     "State": "Solid"
   },
   {
@@ -536,7 +536,7 @@
     "Name": "Neodymium",
     "Symbol": "Nd",
     "Block": "f",
-    "Type": "Lanthanoid",
+    "Type": "Lanthanide",
     "State": "Solid"
   },
   {
@@ -545,7 +545,7 @@
     "Name": "Promethium",
     "Symbol": "Pm",
     "Block": "f",
-    "Type": "Lanthanoid",
+    "Type": "Lanthanide",
     "State": "Solid"
   },
   {
@@ -554,7 +554,7 @@
     "Name": "Samarium",
     "Symbol": "Sm",
     "Block": "f",
-    "Type": "Lanthanoid",
+    "Type": "Lanthanide",
     "State": "Solid"
   },
   {
@@ -563,7 +563,7 @@
     "Name": "Europium",
     "Symbol": "Eu",
     "Block": "f",
-    "Type": "Lanthanoid",
+    "Type": "Lanthanide",
     "State": "Solid"
   },
   {
@@ -572,7 +572,7 @@
     "Name": "Gadolinium",
     "Symbol": "Gd",
     "Block": "f",
-    "Type": "Lanthanoid",
+    "Type": "Lanthanide",
     "State": "Solid"
   },
   {
@@ -581,7 +581,7 @@
     "Name": "Terbium",
     "Symbol": "Tb",
     "Block": "f",
-    "Type": "Lanthanoid",
+    "Type": "Lanthanide",
     "State": "Solid"
   },
   {
@@ -590,7 +590,7 @@
     "Name": "Dysprosium",
     "Symbol": "Dy",
     "Block": "f",
-    "Type": "Lanthanoid",
+    "Type": "Lanthanide",
     "State": "Solid"
   },
   {
@@ -599,7 +599,7 @@
     "Name": "Holmium",
     "Symbol": "Ho",
     "Block": "f",
-    "Type": "Lanthanoid",
+    "Type": "Lanthanide",
     "State": "Solid"
   },
   {
@@ -608,7 +608,7 @@
     "Name": "Thulium",
     "Symbol": "Tm",
     "Block": "f",
-    "Type": "Lanthanoid",
+    "Type": "Lanthanide",
     "State": "Solid"
   },
   {
@@ -617,7 +617,7 @@
     "Name": "Erbium",
     "Symbol": "Er",
     "Block": "f",
-    "Type": "Lanthanoid",
+    "Type": "Lanthanide",
     "State": "Solid"
   },
   {
@@ -626,7 +626,7 @@
     "Name": "Ytterbium",
     "Symbol": "Yb",
     "Block": "f",
-    "Type": "Lanthanoid",
+    "Type": "Lanthanide",
     "State": "Solid"
   },
   {
@@ -635,7 +635,7 @@
     "Name": "Lutetium",
     "Symbol": "Lu",
     "Block": "f",
-    "Type": "Lanthanoid",
+    "Type": "Lanthanide",
     "State": "Solid"
   },
   {
@@ -797,7 +797,7 @@
     "Name": "Actinium",
     "Symbol": "Ac",
     "Block": "d",
-    "Type": "Actinoid",
+    "Type": "Actinide",
     "State": "Solid"
   },
   {
@@ -806,7 +806,7 @@
     "Name": "Thorium",
     "Symbol": "Th",
     "Block": "f",
-    "Type": "Actinoid",
+    "Type": "Actinide",
     "State": "Solid"
   },
   {
@@ -815,7 +815,7 @@
     "Name": "Protactium",
     "Symbol": "Pa",
     "Block": "f",
-    "Type": "Actinoid",
+    "Type": "Actinide",
     "State": "Solid"
   },
   {
@@ -824,7 +824,7 @@
     "Name": "Uranium",
     "Symbol": "U",
     "Block": "f",
-    "Type": "Actinoid",
+    "Type": "Actinide",
     "State": "Solid"
   },
   {
@@ -833,7 +833,7 @@
     "Name": "Neptunium",
     "Symbol": "Np",
     "Block": "f",
-    "Type": "Actinoid",
+    "Type": "Actinide",
     "State": "Solid"
   },
   {
@@ -842,7 +842,7 @@
     "Name": "Plutonium",
     "Symbol": "Pu",
     "Block": "f",
-    "Type": "Actinoid",
+    "Type": "Actinide",
     "State": "Solid"
   },
   {
@@ -851,7 +851,7 @@
     "Name": "Americium",
     "Symbol": "Am",
     "Block": "f",
-    "Type": "Actinoid",
+    "Type": "Actinide",
     "State": "Solid"
   },
   {
@@ -860,7 +860,7 @@
     "Name": "Curium",
     "Symbol": "Cm",
     "Block": "f",
-    "Type": "Actinoid",
+    "Type": "Actinide",
     "State": "Solid"
   },
   {
@@ -869,7 +869,7 @@
     "Name": "Berkelium",
     "Symbol": "Bk",
     "Block": "f",
-    "Type": "Actinoid",
+    "Type": "Actinide",
     "State": "Solid"
   },
   {
@@ -878,7 +878,7 @@
     "Name": "Californium",
     "Symbol": "Cf",
     "Block": "f",
-    "Type": "Actinoid",
+    "Type": "Actinide",
     "State": "Solid"
   },
   {
@@ -887,7 +887,7 @@
     "Name": "Einsteinium",
     "Symbol": "Es",
     "Block": "f",
-    "Type": "Actinoid",
+    "Type": "Actinide",
     "State": "Solid"
   },
   {
@@ -896,7 +896,7 @@
     "Name": "Fermium",
     "Symbol": "Fm",
     "Block": "f",
-    "Type": "Actinoid",
+    "Type": "Actinide",
     "State": "Solid"
   },
   {
@@ -905,7 +905,7 @@
     "Name": "Mendelevium",
     "Symbol": "Md",
     "Block": "f",
-    "Type": "Actinoid",
+    "Type": "Actinide",
     "State": "Solid"
   },
   {
@@ -914,7 +914,7 @@
     "Name": "Nobelium",
     "Symbol": "No",
     "Block": "f",
-    "Type": "Actinoid",
+    "Type": "Actinide",
     "State": "Solid"
   },
   {
@@ -923,7 +923,7 @@
     "Name": "Lawrencium",
     "Symbol": "Lr",
     "Block": "f",
-    "Type": "Actinoid",
+    "Type": "Actinide",
     "State": "Solid"
   },
   {

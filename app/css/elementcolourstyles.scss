@@ -56,14 +56,14 @@
   }
 }
 
-.lanthanoid {
+.lanthanide {
   background-color: $blue;
   &.lightenable:hover {
     background-color: lighten($blue, $lighten);
   }
 }
 
-.actinoid {
+.actinide {
   background-color: $cyan;
   &.lightenable:hover {
     background-color: lighten($cyan, $lighten);

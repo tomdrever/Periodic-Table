@@ -22,7 +22,11 @@ table.classList.add("table")
 var tbody = document.createElement('tbody')
 tbody.id = "tbody"
 
+var periodCounter = 1;
+
 for (var i = 0; i < lines.length; i++) {
+
+  var groupCounter = 1;
 
   // Create row
   var trow = document.createElement('tr')
@@ -32,10 +36,16 @@ for (var i = 0; i < lines.length; i++) {
   for (var j = 0; j < line.length; j++) {
 
     // Create cell
-    var tcell = newCell(parseInt(line[j]))
+    var tcell = newCell(parseInt(line[j]), groupCounter, periodCounter)
 
     trow.appendChild(tcell)
+
+    groupCounter++
   }
+
+  // If the row wasn't empty, increase the period counter
+  if (lines[i].indexOf(1) != -1) { periodCounter++ }
+
 
   tbody.appendChild(trow)
 }
@@ -61,6 +71,8 @@ function newCell(index) {
 
   if (index != 0) { // Normal cell
     var element = elements[index-1]
+    element["Group"] = groupCounter;
+    element["Period"] = periodCounter;
     cellGenerator.createNewElementCell(tcell, element)
   } else { // Empty space
     tcell.classList.add("empty")

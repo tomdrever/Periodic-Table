@@ -6,8 +6,13 @@
     <p class='modal-text'>%s</p>
   </div>
   <div class='modal-body'>
-    <p class='modal-text'> Placeholder text 1! </p>
-    <p class='modal-text'> Placeholder text 2! </p>
+    <p class='modal-text'> Group: %s</p>
+    <p class='modal-text'> Period: %s </p>
+    <p class='modal-text'> Atomic Number: %s </p>
+    <p class='modal-text'> Atomic Mass: %s </p>
+    <p class='modal-text tag-text %s'> Block: %s </p>
+    <p class='modal-text tag-text %s'> Type: %s </p>
+    <p class='modal-text tag-text %s'> State at room temperature: %s </p>
   </div>
 
   <!--
@@ -15,4 +20,14 @@
   2 - symbol
   3 - name
   4 - type description
+  5 - group
+  6 - period
+  7 - atomic number
+  8 - atomic mass
+  9 - blockcss
+  10 - block
+  11 - typecss
+  12 - type
+  13 - statecss
+  14 - state
   -->

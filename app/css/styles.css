@@ -58,11 +58,12 @@
   .modal .modal-content {
     pointer-events: none;
     margin: auto;
-    width: 33.3%;
+    width: 30%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
     .modal .modal-content .modal-text {
       margin: 0.25em;
-      color: #F5F5F5; }
+      color: #F5F5F5;
+      text-align: center; }
     .modal .modal-content .modal-heading {
       padding: 0.5em;
       border-top-left-radius: 4px;
@@ -74,23 +75,27 @@
         font-size: 5rem;
         margin-top: 0;
         margin-bottom: 0; }
-      .modal .modal-content .modal-heading .modal-text {
-        text-align: center; }
     .modal .modal-content .modal-body {
       padding: 1em;
       background-color: #fefefe;
       border-bottom-left-radius: 4px;
       border-bottom-right-radius: 4px; }
       .modal .modal-content .modal-body .modal-text {
-        color: #212121; }
+        margin: 0.5em;
+        color: #212121;
+        text-align: left; }
+      .modal .modal-content .modal-body .tag-text {
+        color: #E0E0E0;
+        padding: 0.2em 0.5em;
+        border-radius: 15px; }
   .modal .modal-close {
     position: absolute;
     pointer-events: auto;
     top: 0;
     right: 0;
     padding: 1em;
-    width: 3em;
-    height: 3em;
+    width: 2.5em;
+    height: 2.5em;
     outline: none; }
     .modal .modal-close:hover, .modal .modal-close:focus {
       cursor: pointer; }
@@ -98,92 +103,92 @@
 .nonmetal {
   background-color: #6A1B9A; }
   .nonmetal.lightenable:hover {
-    background-color: #8823c5; }
+    background-color: #8f25d0; }
 
 .transition-metal {
   background-color: #F57C00; }
   .transition-metal.lightenable:hover {
-    background-color: #ff9529; }
+    background-color: #ff9c36; }
 
 .unknown {
   background-color: #37474F; }
   .unknown.lightenable:hover {
-    background-color: #4c626d; }
+    background-color: #516975; }
 
 .alkali-metal {
   background-color: #c62828; }
   .alkali-metal.lightenable:hover {
-    background-color: #da4747; }
+    background-color: #dc5252; }
 
 .alkaline-earth-metal {
   background-color: #D84315; }
   .alkaline-earth-metal.lightenable:hover {
-    background-color: #eb6035; }
+    background-color: #ec6940; }
 
 .other-metal {
   background-color: #00695C; }
   .other-metal.lightenable:hover {
-    background-color: #009c89; }
+    background-color: #00a994; }
 
 .halogen {
   background-color: #558B2F; }
   .halogen.lightenable:hover {
-    background-color: #6cb13c; }
+    background-color: #72bb3f; }
 
 .noble-gas {
   background-color: #2E7D32; }
   .noble-gas.lightenable:hover {
-    background-color: #3ca241; }
+    background-color: #3fac45; }
 
-.lanthanoid {
+.lanthanide {
   background-color: #1565C0; }
-  .lanthanoid.lightenable:hover {
-    background-color: #217ee7; }
+  .lanthanide.lightenable:hover {
+    background-color: #2d84e8; }
 
-.actinoid {
+.actinide {
   background-color: #00838F; }
-  .actinoid.lightenable:hover {
-    background-color: #00b2c2; }
+  .actinide.lightenable:hover {
+    background-color: #00bdcf; }
 
 .metalloid {
   background-color: #283593; }
   .metalloid.lightenable:hover {
-    background-color: #3343bb; }
+    background-color: #3647c5; }
 
 .p-block {
   background-color: #F57C00; }
   .p-block.lightenable:hover {
-    background-color: #ff9529; }
+    background-color: #ff9c36; }
 
 .d-block {
   background-color: #2E7D32; }
   .d-block.lightenable:hover {
-    background-color: #3ca241; }
+    background-color: #3fac45; }
 
 .s-block {
   background-color: #1565C0; }
   .s-block.lightenable:hover {
-    background-color: #217ee7; }
+    background-color: #2d84e8; }
 
 .f-block {
   background-color: #6A1B9A; }
   .f-block.lightenable:hover {
-    background-color: #8823c5; }
+    background-color: #8f25d0; }
 
 .gas {
   background-color: #c62828; }
   .gas.lightenable:hover {
-    background-color: #da4747; }
+    background-color: #dc5252; }
 
 .liquid {
   background-color: #1565C0; }
   .liquid.lightenable:hover {
-    background-color: #217ee7; }
+    background-color: #2d84e8; }
 
 .solid {
   background-color: #2E7D32; }
   .solid.lightenable:hover {
-    background-color: #3ca241; }
+    background-color: #3fac45; }
 
 html, body {
   font-family: 'Roboto Condensed', sans-serif;
@@ -241,7 +246,7 @@ html, body {
           color: #212121;
           font-size: 1.2em; }
         #toolbar #options-dropdown-container .dropdown .dropdown-item:hover {
-          background-color: gainsboro; }
+          background-color: #d5d5d5; }
         #toolbar #options-dropdown-container .dropdown .dropdown-item .icon-visible {
           visibility: visible; }
     #toolbar #options-dropdown-container .show {

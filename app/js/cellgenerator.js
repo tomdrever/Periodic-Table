@@ -15,6 +15,17 @@ module.exports = {
     cell.setAttribute("element-block", element.Block)
     cell.setAttribute("element-state", element.State)
 
+    // Irritating Lanthanides and Actinides
+    if (element.Period == 8) {
+      element.Period = 6
+      element.Group = "Lanthanide"
+    }
+
+    if (element.Period == 9) {
+      element.Period = 7
+      element.Group = "Actinide"
+    }
+
     // Element-cell details layout
     var cellHeader = document.createElement("DIV")
     cellHeader.classList.add("element-cell-row")
@@ -65,7 +76,7 @@ module.exports = {
       modalContainer.classList.add("modal")
       modalContainer.id = "modal"
 
-      modalContainer.innerHTML += util.format(fs.readFileSync("app/res/modal_html.txt", "utf8"), headerClassName, element.Symbol, element.Name, headerTypeDetails)
+      modalContainer.innerHTML += util.format(fs.readFileSync("app/res/modal_html.txt", "utf8"), headerClassName, element.Symbol, element.Name, headerTypeDetails, element.Group, element.Period, String(element.AtomicNumber), (element.AtomicMass != null) ? String(element.AtomicMass) : "Unknown",  blockMap[element.Block], element.Block, typeMap[element.Type], element.Type, stateMap[element.State], element.State)
 
       modalContainer.getElementsByClassName("modal-close")[0].onclick = function() {
         var modalToRemove = document.getElementById("modal")

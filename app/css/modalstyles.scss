@@ -17,12 +17,13 @@
     .modal-content {
         pointer-events: none;
         margin: auto;
-        width: 33.3%;
+        width: 30%;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
         .modal-text {
           margin: 0.25em;
           color: $light-blue-grey;
+          text-align: center;
         }
 
         .modal-heading {
@@ -40,10 +41,6 @@
             margin-top: 0;
             margin-bottom: 0;
           }
-
-          .modal-text {
-            text-align: center;
-          }
         }
 
         .modal-body {
@@ -53,7 +50,15 @@
           border-bottom-right-radius: 4px;
 
           .modal-text {
+            margin: 0.5em;
             color: $text-grey;
+            text-align: left;
+          }
+
+          .tag-text {
+            color: $light-grey;
+            padding: 0.2em 0.5em;
+            border-radius: 15px;
           }
         }
     }
@@ -65,8 +70,8 @@
       top: 0;
       right: 0;
       padding: 1em;
-      width: 3em;
-      height: 3em;
+      width: 2.5em;
+      height: 2.5em;
       outline: none;
 
       &:hover, &:focus {
