@@ -9,10 +9,10 @@ var blockMap = maps.getBlockMap()
 var stateMap = maps.getStateMap()
 
 // Get elements data
-var elements = JSON.parse(fs.readFileSync('elements.json', 'utf8'))
+var elements = JSON.parse(fs.readFileSync('app/res/elements.json', 'utf8'))
 
 // Read lines from layout file
-var lines = JSON.parse(fs.readFileSync('layout.json', 'utf8'))
+var lines = JSON.parse(fs.readFileSync('app/res/layout.json', 'utf8'))
 
 // Create table and load element data and create element
 var body = document.getElementsByTagName('body')[0]
@@ -44,7 +44,7 @@ table.appendChild(tbody)
 body.appendChild(table)
 
 // Initial colouring
-onColourByStateClicked()
+onColourByTypeClicked()
 
 // Event listener for escape key for element modal
 document.addEventListener('keydown', event => {

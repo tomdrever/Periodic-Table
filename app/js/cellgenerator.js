@@ -1,7 +1,16 @@
+const maps = require('./maps')
+const util = require('util')
+const fs = require('fs')
+
+var blockMap = maps.getBlockMap()
+var typeMap = maps.getTypeMap()
+var stateMap = maps.getStateMap()
+
 module.exports = {
   createNewElementCell: function(cell, element) {
 
     cell.classList.add("element")
+    cell.classList.add("lightenable")
     cell.setAttribute("element-type", element.Type)
     cell.setAttribute("element-block", element.Block)
     cell.setAttribute("element-state", element.State)
@@ -36,30 +45,34 @@ module.exports = {
 
     // Element info modal dialog
     cell.onclick = function() {
-      // Add basic modal HMTL
-      var modal = document.createElement("DIV")
-      modal.classList.add("modal")
-      modal.id = "modal"
+      var headerClassName = ""
+      var headerTypeDetails = ""
 
-      var modalContent = document.createElement("DIV")
-      modalContent.classList.add("modal-content")
+      // Get type and type description
+      if (cell.classList.contains(stateMap[element.State])) {
+        headerClassName = stateMap[element.State]
+        headerTypeDetails = element.State + " at room temperature"
+      } else if (cell.classList.contains(typeMap[element.Type])) {
+        headerClassName = typeMap[element.Type]
+        headerTypeDetails = element.Type
+      } else {
+        headerClassName = blockMap[element.Block]
+        headerTypeDetails = element.Block + "-block"
+      }
 
-      var modalContentText = document.createElement("P")
-      modalContentText.appendChild(document.createTextNode("Element: " + element.Name))
+      // Create modal HMTL
+      var modalContainer = document.createElement("DIV")
+      modalContainer.classList.add("modal")
+      modalContainer.id = "modal"
 
-      var modalContentClose = document.createElement("SPAN")
-      modalContentClose.classList.add("modal-close")
-      modalContentClose.appendChild(document.createTextNode("x"))
-      modalContentClose.onclick = function() {
+      modalContainer.innerHTML += util.format(fs.readFileSync("app/res/modal_html.txt", "utf8"), headerClassName, element.Symbol, element.Name, headerTypeDetails)
+
+      modalContainer.getElementsByClassName("modal-close")[0].onclick = function() {
         var modalToRemove = document.getElementById("modal")
         modalToRemove.remove()
       }
 
-      // Compile modal DOM elements and add to document
-      modalContent.appendChild(modalContentClose)
-      modalContent.appendChild(modalContentText)
-      modal.appendChild(modalContent)
-      document.getElementsByTagName('body')[0].appendChild(modal)
+      document.getElementsByTagName("BODY")[0].appendChild(modalContainer)
     }
   }
 }

@@ -1,0 +1,18 @@
+<div class='modal-content'>
+  <div class='modal-heading %s'>
+    <input class='modal-close' type='image' src='res/close_icon.png'></input>
+    <p class='modal-text symbol-text'>%s</p>
+    <p class='modal-text name-text'>%s</p>
+    <p class='modal-text'>%s</p>
+  </div>
+  <div class='modal-body'>
+    <p class='modal-text'> Placeholder text 1! </p>
+    <p class='modal-text'> Placeholder text 2! </p>
+  </div>
+
+  <!--
+  1 - type
+  2 - symbol
+  3 - name
+  4 - type description
+  -->

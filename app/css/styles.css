@@ -52,117 +52,137 @@
   background-color: black;
   /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */ }
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; }
-
-/* The Close Button */
-.modal-close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold; }
-
-.modal-close:hover,
-.modal-close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer; }
+  /* Black w/ opacity */
+  /* Modal Content */
+  /* The Close Button */ }
+  .modal .modal-content {
+    pointer-events: none;
+    margin: auto;
+    width: 33.3%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+    .modal .modal-content .modal-text {
+      margin: 0.25em;
+      color: #F5F5F5; }
+    .modal .modal-content .modal-heading {
+      padding: 0.5em;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      position: relative; }
+      .modal .modal-content .modal-heading .name-text {
+        font-size: 1.5rem; }
+      .modal .modal-content .modal-heading .symbol-text {
+        font-size: 5rem;
+        margin-top: 0;
+        margin-bottom: 0; }
+      .modal .modal-content .modal-heading .modal-text {
+        text-align: center; }
+    .modal .modal-content .modal-body {
+      padding: 1em;
+      background-color: #fefefe;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px; }
+      .modal .modal-content .modal-body .modal-text {
+        color: #212121; }
+  .modal .modal-close {
+    position: absolute;
+    pointer-events: auto;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    width: 3em;
+    height: 3em;
+    outline: none; }
+    .modal .modal-close:hover, .modal .modal-close:focus {
+      cursor: pointer; }
 
 .nonmetal {
   background-color: #6A1B9A; }
-  .nonmetal:hover {
+  .nonmetal.lightenable:hover {
     background-color: #8823c5; }
 
 .transition-metal {
   background-color: #F57C00; }
-  .transition-metal:hover {
+  .transition-metal.lightenable:hover {
     background-color: #ff9529; }
 
 .unknown {
   background-color: #37474F; }
-  .unknown:hover {
+  .unknown.lightenable:hover {
     background-color: #4c626d; }
 
 .alkali-metal {
   background-color: #c62828; }
-  .alkali-metal:hover {
+  .alkali-metal.lightenable:hover {
     background-color: #da4747; }
 
 .alkaline-earth-metal {
   background-color: #D84315; }
-  .alkaline-earth-metal:hover {
+  .alkaline-earth-metal.lightenable:hover {
     background-color: #eb6035; }
 
 .other-metal {
   background-color: #00695C; }
-  .other-metal:hover {
+  .other-metal.lightenable:hover {
     background-color: #009c89; }
 
 .halogen {
   background-color: #558B2F; }
-  .halogen:hover {
+  .halogen.lightenable:hover {
     background-color: #6cb13c; }
 
 .noble-gas {
   background-color: #2E7D32; }
-  .noble-gas:hover {
+  .noble-gas.lightenable:hover {
     background-color: #3ca241; }
 
 .lanthanoid {
   background-color: #1565C0; }
-  .lanthanoid:hover {
+  .lanthanoid.lightenable:hover {
     background-color: #217ee7; }
 
 .actinoid {
   background-color: #00838F; }
-  .actinoid:hover {
+  .actinoid.lightenable:hover {
     background-color: #00b2c2; }
 
 .metalloid {
   background-color: #283593; }
-  .metalloid:hover {
+  .metalloid.lightenable:hover {
     background-color: #3343bb; }
 
 .p-block {
   background-color: #F57C00; }
-  .p-block:hover {
+  .p-block.lightenable:hover {
     background-color: #ff9529; }
 
 .d-block {
   background-color: #2E7D32; }
-  .d-block:hover {
+  .d-block.lightenable:hover {
     background-color: #3ca241; }
 
 .s-block {
   background-color: #1565C0; }
-  .s-block:hover {
+  .s-block.lightenable:hover {
     background-color: #217ee7; }
 
 .f-block {
   background-color: #6A1B9A; }
-  .f-block:hover {
+  .f-block.lightenable:hover {
     background-color: #8823c5; }
 
 .gas {
   background-color: #c62828; }
-  .gas:hover {
+  .gas.lightenable:hover {
     background-color: #da4747; }
 
 .liquid {
   background-color: #1565C0; }
-  .liquid:hover {
+  .liquid.lightenable:hover {
     background-color: #217ee7; }
 
 .solid {
   background-color: #2E7D32; }
-  .solid:hover {
+  .solid.lightenable:hover {
     background-color: #3ca241; }
 
 html, body {

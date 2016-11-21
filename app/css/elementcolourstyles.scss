@@ -2,126 +2,126 @@
 
 .nonmetal {
   background-color: $purple;
-  &:hover {
+    &.lightenable:hover {
     background-color: lighten($purple, $lighten);
   }
 }
 
 .transition-metal {
   background-color: $amber;
-  &:hover {
+  &.lightenable:hover {
     background-color: lighten($amber, $lighten);
   }
 }
 
 .unknown {
   background-color: $blue-grey;
-  &:hover {
+  &.lightenable:hover {
     background-color: lighten($blue-grey, $lighten);
   }
 }
 
 .alkali-metal {
   background-color: $red;
-  &:hover {
+  &.lightenable:hover {
     background-color: lighten($red, $lighten);
   }
 }
 
 .alkaline-earth-metal {
   background-color: $deep-orange;
-  &:hover {
+  &.lightenable:hover {
     background-color: lighten($deep-orange, $lighten);
   }
 }
 
 .other-metal {
   background-color: $teal;
-  &:hover {
+  &.lightenable:hover {
     background-color: lighten($teal, $lighten);
   }
 }
 
 .halogen {
   background-color: $light-green;
-  &:hover {
+  &.lightenable:hover {
     background-color: lighten($light-green, $lighten);
   }
 }
 
 .noble-gas {
   background-color: $green;
-  &:hover {
+  &.lightenable:hover {
     background-color: lighten($green, $lighten);
   }
 }
 
 .lanthanoid {
   background-color: $blue;
-  &:hover {
+  &.lightenable:hover {
     background-color: lighten($blue, $lighten);
   }
 }
 
 .actinoid {
   background-color: $cyan;
-  &:hover {
+  &.lightenable:hover {
     background-color: lighten($cyan, $lighten);
   }
 }
 
 .metalloid {
   background-color: $indigo;
-  &:hover {
+  &.lightenable:hover {
     background-color: lighten($indigo, $lighten);
   }
 }
 
 .p-block {
   background-color: $amber;
-  &:hover {
+  &.lightenable:hover {
     background-color: lighten($amber, $lighten);
   }
 }
 
 .d-block {
   background-color: $green;
-  &:hover {
+  &.lightenable:hover {
     background-color: lighten($green, $lighten);
   }
 }
 
 .s-block {
   background-color: $blue;
-  &:hover {
+  &.lightenable:hover {
     background-color: lighten($blue, $lighten);
   }
 }
 
 .f-block {
   background-color: $purple;
-  &:hover {
+  &.lightenable:hover {
     background-color: lighten($purple, $lighten);
   }
 }
 
 .gas {
   background-color: $red;
-  &:hover {
+  &.lightenable:hover {
     background-color: lighten($red, $lighten);
   }
 }
 
 .liquid {
   background-color: $blue;
-  &:hover {
+  &.lightenable:hover {
     background-color: lighten($blue, $lighten);
   }
 }
 
 .solid {
   background-color: $green;
-  &:hover {
+  &.lightenable:hover {
     background-color: lighten($green, $lighten);
   }
 }
