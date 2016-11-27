@@ -2,17 +2,61 @@
   <div class='modal-heading %s'>
     <input class='modal-close' type='image' src='res/close_icon.png'></input>
     <p class='modal-text symbol-text'>%s</p>
-    <p class='modal-text name-text'>%s</p>
+    <div class='modal-text'>
+      <p class='name-text'>%s</p>
+      <img class="copy" src="res/copy_icon_white.png"/>
+    </div>
     <p class='modal-text'>%s</p>
   </div>
   <div class='modal-body'>
-    <p class='modal-text'> Group: %s</p>
-    <p class='modal-text'> Period: %s </p>
-    <p class='modal-text'> Atomic Number: %s </p>
-    <p class='modal-text'> Atomic Mass: %s </p>
-    <p class='modal-text tag-text %s'> Block: %s </p>
-    <p class='modal-text tag-text %s'> Type: %s </p>
-    <p class='modal-text tag-text %s'> State at room temperature: %s </p>
+    <div class='modal-text'>
+      <p> Group: %s</p>
+      <img class="copy" src="res/copy_icon_black.png"/>
+      <img class="help tooltipcontainer" src="res/help_icon_black.png"/>
+      <p class="tooltip">The periodic table can be divided into groups, or columns.</p>
+    </div>
+
+    <div class='modal-text'>
+      <p> Period: %s </p>
+      <img class="copy" src="res/copy_icon_black.png"/>
+      <img class="help tooltipcontainer" src="res/help_icon_black.png"/>
+      <p class="tooltip">The periodic table can be divided into periods, or rows.</p>
+    </div>
+
+    <div class='modal-text'>
+      <p> Atomic Number: %s </p>
+      <img class="copy" src="res/copy_icon_black.png"/>
+      <img class="help tooltipcontainer" src="res/help_icon_black.png"/>
+      <p class="tooltip">An element's atomic number is the number of protons an atom of that element has.</p>
+    </div>
+
+    <div class='modal-text'>
+      <p> Atomic Mass: %s </p>
+      <img class="copy" src="res/copy_icon_black.png"/>
+      <img class="help tooltipcontainer" src="res/help_icon_black.png"/>
+      <p class="tooltip">The atomic mass (or relative atomic mass) of an element is the weighted mean mass of an atom of that element compared with 1/12 the mass of an atom of Carbon-12.</p>
+    </div>
+
+    <div class='modal-text tag-text %s'>
+      <p> Block: %s </p>
+      <img class="copy" src="res/copy_icon_white.png"/>
+      <img class="help tooltipcontainer" src="res/help_icon_white.png"/>
+      <p class="tooltip">A block is a set of groups wherein the highest-energy electrons in each element belong to the same orbital type (the 's', 'd, 'p' and 'f' orbitals).</p>
+    </div>
+
+    <div class='modal-text tag-text %s'>
+      <p> Type: %s </p>
+      <img class="copy" src="res/copy_icon_white.png"/>
+      <img class="help tooltipcontainer" src="res/help_icon_white.png"/>
+      <p class="tooltip">Elements can also be grouped by type. Elements of the same type are often in the same or a similar group, and have very similar chemical properties.</p>
+    </div>
+
+    <div class='modal-text tag-text %s'>
+      <p> State at room temperature: %s </p>
+      <img class="copy" src="res/copy_icon_white.png"/>
+      <img class="help tooltipcontainer" src="res/help_icon_white.png"/>
+      <p class="tooltip">Elements all have different melting and boiling points, so not all are the same state at room temperature.</p>
+    </div>
   </div>
 
   <!--

@@ -56,19 +56,57 @@
   /* Modal Content */
   /* The Close Button */ }
   .modal .modal-content {
-    pointer-events: none;
     margin: auto;
     width: 30%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
     .modal .modal-content .modal-text {
-      margin: 0.25em;
-      color: #F5F5F5;
-      text-align: center; }
+      margin: 0.5em;
+      padding: 0.2em 0.5em;
+      color: #212121;
+      display: flex;
+      align-items: center;
+      position: relative; }
+      .modal .modal-content .modal-text p {
+        text-align: center;
+        margin: 0;
+        display: inline; }
+      .modal .modal-content .modal-text img {
+        width: 1em;
+        height: 1em; }
+      .modal .modal-content .modal-text .tooltip {
+        visibility: hidden;
+        width: 240px;
+        background-color: rgba(5, 5, 5, 0.9);
+        color: #fff;
+        text-align: center;
+        padding: 1.2em;
+        border-radius: 6px;
+        top: -105%;
+        left: 105%;
+        position: absolute;
+        z-index: 2; }
+      .modal .modal-content .modal-text .tooltipcontainer:hover + .tooltip {
+        visibility: visible; }
+      .modal .modal-content .modal-text .copy {
+        margin-left: .75em;
+        cursor: pointer; }
+      .modal .modal-content .modal-text .help {
+        margin-left: auto;
+        cursor: pointer; }
     .modal .modal-content .modal-heading {
       padding: 0.5em;
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
       position: relative; }
+      .modal .modal-content .modal-heading .modal-text {
+        margin: 0.25em;
+        color: #F5F5F5;
+        text-align: center;
+        display: block; }
+        .modal .modal-content .modal-heading .modal-text p {
+          text-align: center; }
+        .modal .modal-content .modal-heading .modal-text .copy {
+          position: absolute; }
       .modal .modal-content .modal-heading .name-text {
         font-size: 1.5rem; }
       .modal .modal-content .modal-heading .symbol-text {
@@ -80,17 +118,12 @@
       background-color: #fefefe;
       border-bottom-left-radius: 4px;
       border-bottom-right-radius: 4px; }
-      .modal .modal-content .modal-body .modal-text {
-        margin: 0.5em;
-        color: #212121;
-        text-align: left; }
       .modal .modal-content .modal-body .tag-text {
         color: #E0E0E0;
-        padding: 0.2em 0.5em;
         border-radius: 15px; }
   .modal .modal-close {
     position: absolute;
-    pointer-events: auto;
+    z-index: 3;
     top: 0;
     right: 0;
     padding: 1em;

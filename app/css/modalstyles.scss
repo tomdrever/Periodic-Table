@@ -2,80 +2,126 @@
 
 /* The Modal (background) */
 .modal {
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 
-    /* Modal Content */
-    .modal-content {
-        pointer-events: none;
-        margin: auto;
-        width: 30%;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  /* Modal Content */
+  .modal-content {
+    margin: auto;
+    width: 30%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
-        .modal-text {
-          margin: 0.25em;
-          color: $light-blue-grey;
-          text-align: center;
-        }
+    .modal-text {
+      margin: 0.5em;
+      padding: 0.2em 0.5em;
+      color: $text-grey;
+      display: flex;
+      align-items: center;
+      position: relative;
 
-        .modal-heading {
-          padding: 0.5em;
-          border-top-left-radius: 4px;
-          border-top-right-radius: 4px;
-          position: relative;
+      p {
+        text-align: center;
+        margin: 0;
+        display: inline;
+      }
 
-          .name-text {
-            font-size: 1.5rem;
-          }
+      img {
+        width: 1em;
+        height: 1em;
+      }
 
-          .symbol-text {
-            font-size: 5rem;
-            margin-top: 0;
-            margin-bottom: 0;
-          }
-        }
+      .tooltip {
+        visibility: hidden;
+        width: 240px;
+        background-color: rgba(5, 5, 5, 0.9);;
+        color: #fff;
+        text-align: center;
+        padding: 1.2em;
+        border-radius: 6px;
 
-        .modal-body {
-          padding: 1em;
-          background-color: #fefefe;
-          border-bottom-left-radius: 4px;
-          border-bottom-right-radius: 4px;
+        top: -105%;
+        left: 105%;
+        position: absolute;
+        z-index: 2;
+      }
 
-          .modal-text {
-            margin: 0.5em;
-            color: $text-grey;
-            text-align: left;
-          }
+      .tooltipcontainer:hover + .tooltip {
+        visibility: visible;
+      }
 
-          .tag-text {
-            color: $light-grey;
-            padding: 0.2em 0.5em;
-            border-radius: 15px;
-          }
-        }
-    }
+      .copy {
+        margin-left: .75em;
+        cursor: pointer;
+      }
 
-    /* The Close Button */
-    .modal-close {
-      position: absolute;
-      pointer-events: auto;
-      top: 0;
-      right: 0;
-      padding: 1em;
-      width: 2.5em;
-      height: 2.5em;
-      outline: none;
-
-      &:hover, &:focus {
+      .help {
+        margin-left: auto;
         cursor: pointer;
       }
     }
+
+    .modal-heading {
+      padding: 0.5em;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      position: relative;
+
+      .modal-text {
+        margin: 0.25em;
+        color: $light-blue-grey;
+        text-align: center;
+        display: block;
+
+        p {text-align: center;}
+
+        .copy {position: absolute; }
+      }
+
+      .name-text {
+        font-size: 1.5rem;
+      }
+
+      .symbol-text {
+        font-size: 5rem;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    .modal-body {
+      padding: 1em;
+      background-color: #fefefe;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+
+      .tag-text {
+        color: $light-grey;
+        border-radius: 15px;
+      }
+    }
+  }
+
+  /* The Close Button */
+  .modal-close {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    width: 2.5em;
+    height: 2.5em;
+    outline: none;
+
+    &:hover, &:focus {
+      cursor: pointer;
+    }
+  }
 }
