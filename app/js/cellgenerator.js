@@ -1,6 +1,7 @@
 const maps = require('./maps')
 const util = require('util')
 const fs = require('fs')
+const {clipboard} = require('electron')
 
 var blockMap = maps.getBlockMap()
 var typeMap = maps.getTypeMap()
@@ -84,6 +85,34 @@ module.exports = {
       }
 
       document.getElementsByTagName("BODY")[0].appendChild(modalContainer)
+
+      addCopy()
+    }
+  }
+}
+
+function addCopy() {
+  var copyButtons = document.getElementsByClassName("copy")
+
+  console.log(copyButtons)
+
+  for (var i = 0; i < copyButtons.length; i++) {
+    // Get parent
+    var button = copyButtons[i]
+    var parent = button.parentElement
+
+    // Get text (via adjacent text)
+    var text = parent.getElementsByClassName("data")[0].innerHTML
+    text = text.replace(": ", "")
+
+    // Set attribute to button, so we can use it in onnlick
+    button.setAttribute("data", text)
+
+    button.onclick = function (e) {
+      var senderButton = e.srcElement
+      var data = senderButton.getAttribute("data")
+
+      clipboard.writeText(data)
     }
   }
 }
