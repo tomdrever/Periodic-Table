@@ -33,32 +33,24 @@
   .table .empty {
     border: none; }
 
-/* The Modal (background) */
 .modal {
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Sit on top */
+  overflow-y: hidden;
   padding-top: 100px;
-  /* Location of the box */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
   background-color: black;
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
-  /* Modal Content */
-  /* The Close Button */ }
+  background-color: rgba(0, 0, 0, 0.4); }
   .modal .modal-content {
+    position: relative;
     margin: auto;
     width: 30%;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    animation-name: animateBottomIn;
+    animation-duration: 0.4s; }
     .modal .modal-content .modal-text {
       margin: 0.5em;
       padding: 0.2em 0.5em;
@@ -132,7 +124,58 @@
     outline: none; }
     .modal .modal-close:hover, .modal .modal-close:focus {
       cursor: pointer; }
+  .modal .animate-out {
+    animation-name: animateBottomOut;
+    animation-duration: 0.4s; }
 
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: rgba(5, 5, 5, 0.9);
+  color: #fff;
+  text-align: center;
+  border-radius: 50em;
+  padding: 1em;
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  bottom: 30px;
+  font-size: 14px; }
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadeIn 0.5s, fadeOut 0.5s 2.5s;
+  animation: fadeIn 0.5s, fadeOut 0.5s 2.5s; }
+
+@keyframes fadeIn {
+  from {
+    bottom: 0;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@keyframes fadeOut {
+  from {
+    bottom: 30px;
+    opacity: 1; }
+  to {
+    bottom: 0;
+    opacity: 0; } }
+@keyframes animateBottomIn {
+  from {
+    bottom: -300px;
+    opacity: 0; }
+  to {
+    bottom: 0;
+    opacity: 1; } }
+@keyframes animateBottomOut {
+  from {
+    bottom: 0;
+    opacity: 0; }
+  to {
+    bottom: -600px;
+    opacity: 1; } }
 .nonmetal {
   background-color: #6A1B9A; }
   .nonmetal.lightenable:hover {

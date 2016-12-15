@@ -77,11 +77,17 @@ module.exports = {
       modalContainer.classList.add("modal")
       modalContainer.id = "modal"
 
+      // Format HMTL with data
       modalContainer.innerHTML += util.format(fs.readFileSync("app/res/modal_html.txt", "utf8"), headerClassName, element.Symbol, element.Name, headerTypeDetails, element.Group, element.Period, String(element.AtomicNumber), (element.AtomicMass != null) ? String(element.AtomicMass) : "Unknown",  blockMap[element.Block], element.Block, typeMap[element.Type], element.Type, stateMap[element.State], element.State)
 
       modalContainer.getElementsByClassName("modal-close")[0].onclick = function() {
         var modalToRemove = document.getElementById("modal")
-        modalToRemove.remove()
+        modalToRemove.getElementsByClassName("modal-content")[0].classList.add("animate-out")
+
+        // Remove after animation
+        setTimeout(function() {
+          modalToRemove.remove()
+        }, 400)
       }
 
       document.getElementsByTagName("BODY")[0].appendChild(modalContainer)
@@ -107,10 +113,19 @@ function addCopy() {
     button.setAttribute("data", text)
 
     button.onclick = function (e) {
+      // Get element data and copy to clipboard
       var senderButton = e.srcElement
       var data = senderButton.getAttribute("data")
-
       clipboard.writeText(data)
+
+      // Display snackbar
+      var snackbar = document.getElementById("snackbar")
+      snackbar.className = "show";
+      console.log("display")
+      setTimeout(function() {
+         snackbar.className = snackbar.className.replace("show", "");
+         console.log("stop displaying")
+       }, 3000)
     }
   }
 }

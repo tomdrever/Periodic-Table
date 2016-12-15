@@ -58,7 +58,8 @@
       <p class="tooltip">Elements all have different melting and boiling points, so not all are the same state at room temperature.</p>
     </div>
   </div>
-
+</div>
+<div id="snackbar">Text copied to clipboard</div>
   <!--
   1 - type
   2 - symbol
