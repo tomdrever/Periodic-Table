@@ -12,15 +12,15 @@
         <div id="options-dropdown-container">
           <input id="options-btn" type="image" src="res/settings_icon.png" alt="Settings" onclick="onOptionsClicked()"></input>
           <div id="options-dropdown" class="dropdown">
-            <div class="dropdown-item" onclick="onColourByTypeClicked()">
+            <div class="dropdown-item" onclick="onColourByClicked('type')">
               <img id="colour-by-type-done" class="dropdown-done" src="res/done_icon.png"></img>
               <span>Colour by type</span>
             </div>
-            <div class="dropdown-item" onclick="onColourByBlockClicked()">
+            <div class="dropdown-item" onclick="onColourByClicked('block')">
               <img id="colour-by-block-done" class="dropdown-done" src="res/done_icon.png"></img>
               <span>Colour by block</span>
             </div>
-            <div class="dropdown-item" onclick="onColourByStateClicked()">
+            <div class="dropdown-item" onclick="onColourByClicked('state')">
               <img id="colour-by-state-done" class="dropdown-done" src="res/done_icon.png"></img>
               <span>Colour by state</span>
             </div>
@@ -28,5 +28,6 @@
         </div>
       </div>
       <script src="js\index.js"></script>
+      <script src="js\dropdown.js"></script>
   </body>
 </html>

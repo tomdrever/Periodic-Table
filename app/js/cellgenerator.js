@@ -94,8 +94,6 @@ module.exports = {
 function addCopy() {
   var copyButtons = document.getElementsByClassName("copy")
 
-  console.log(copyButtons)
-
   for (var i = 0; i < copyButtons.length; i++) {
     // Get parent
     var button = copyButtons[i]
