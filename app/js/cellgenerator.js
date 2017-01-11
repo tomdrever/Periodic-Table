@@ -15,6 +15,7 @@ module.exports = {
     cell.setAttribute("element-type", element.Type)
     cell.setAttribute("element-block", element.Block)
     cell.setAttribute("element-state", element.State)
+    cell.setAttribute("element-electronegativity", element.Electronegativity)
 
     // Irritating Lanthanides and Actinides
     if (element.Period == 8) {
@@ -67,9 +68,12 @@ module.exports = {
       } else if (cell.classList.contains(typeMap[element.Type])) {
         headerClassName = typeMap[element.Type]
         headerTypeDetails = element.Type
-      } else {
+      } else if (cell.classList.contains(blockMap[element.Block])) {
         headerClassName = blockMap[element.Block]
         headerTypeDetails = element.Block + "-block"
+      } else if (cell.classList.contains(maps.getElectronegativityClass(element.Electronegativity))) {
+        headerClassName = maps.getElectronegativityClass(element.Electronegativity)
+        headerTypeDetails = element.Electronegativity != null || element.Electronegativity != undefined ? String(element.Electronegativity) : "None"
       }
 
       // Create modal HMTL
@@ -78,7 +82,7 @@ module.exports = {
       modalContainer.id = "modal"
 
       // Format HMTL with data
-      modalContainer.innerHTML += util.format(fs.readFileSync("app/res/modal_html.txt", "utf8"), headerClassName, element.Symbol, element.Name, headerTypeDetails, element.Group, element.Period, String(element.AtomicNumber), (element.AtomicMass != null) ? String(element.AtomicMass) : "Unknown",  blockMap[element.Block], element.Block, typeMap[element.Type], element.Type, stateMap[element.State], element.State)
+      modalContainer.innerHTML += util.format(fs.readFileSync("app/res/modal_html.txt", "utf8"), headerClassName, element.Symbol, element.Name, headerTypeDetails, element.Group, element.Period, String(element.AtomicNumber), (element.AtomicMass != null) ? String(element.AtomicMass) : "Unknown",  blockMap[element.Block], element.Block, typeMap[element.Type], element.Type, stateMap[element.State], element.State, maps.getElectronegativityClass(element.Electronegativity), (element.Electronegativity != null) ? String(element.Electronegativity) : "None")
 
       modalContainer.getElementsByClassName("modal-close")[0].onclick = function() {
         var modalToRemove = document.getElementById("modal")

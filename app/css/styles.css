@@ -266,6 +266,46 @@
   .solid.lightenable:hover {
     background-color: #3fac45; }
 
+.en-one {
+  background-color: #283593; }
+  .en-one.lightenable:hover {
+    background-color: #3647c5; }
+
+.en-two {
+  background-color: #1565C0; }
+  .en-two.lightenable:hover {
+    background-color: #2d84e8; }
+
+.en-three {
+  background-color: #00838F; }
+  .en-three.lightenable:hover {
+    background-color: #00bdcf; }
+
+.en-four {
+  background-color: #00695C; }
+  .en-four.lightenable:hover {
+    background-color: #00a994; }
+
+.en-five {
+  background-color: #2E7D32; }
+  .en-five.lightenable:hover {
+    background-color: #3fac45; }
+
+.en-six {
+  background-color: #558B2F; }
+  .en-six.lightenable:hover {
+    background-color: #72bb3f; }
+
+.en-seven {
+  background-color: #AFB42B; }
+  .en-seven.lightenable:hover {
+    background-color: #cfd44b; }
+
+.en-none {
+  background-color: #37474F; }
+  .en-none.lightenable:hover {
+    background-color: #516975; }
+
 html, body {
   font-family: 'Roboto Condensed', sans-serif;
   background-color: #F5F5F5;

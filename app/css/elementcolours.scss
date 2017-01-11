@@ -125,3 +125,59 @@
     background-color: lighten($green, $lighten);
   }
 }
+
+.en-one {
+  background-color: $indigo;
+  &.lightenable:hover {
+    background-color: lighten($indigo, $lighten);
+  }
+}
+
+.en-two {
+  background-color: $blue;
+  &.lightenable:hover {
+    background-color: lighten($blue, $lighten);
+  }
+}
+
+.en-three {
+  background-color: $cyan;
+  &.lightenable:hover {
+    background-color: lighten($cyan, $lighten);
+  }
+}
+
+.en-four {
+  background-color: $teal;
+  &.lightenable:hover {
+    background-color: lighten($teal, $lighten);
+  }
+}
+
+.en-five {
+  background-color: $green;
+  &.lightenable:hover {
+    background-color: lighten($green, $lighten);
+  }
+}
+
+.en-six {
+  background-color: $light-green;
+  &.lightenable:hover {
+    background-color: lighten($light-green, $lighten);
+  }
+}
+
+.en-seven {
+  background-color: $lime;
+  &.lightenable:hover {
+    background-color: lighten($lime, $lighten);
+  }
+}
+
+.en-none {
+  background-color: $blue-grey;
+  &.lightenable:hover {
+    background-color: lighten($blue-grey, $lighten);
+  }
+}

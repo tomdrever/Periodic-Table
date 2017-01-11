@@ -57,6 +57,13 @@
       <img class="help tooltipcontainer" src="res/help_icon_white.png"/>
       <p class="tooltip">Elements all have different melting and boiling points, so not all are the same state at room temperature.</p>
     </div>
+
+    <div class='modal-text tag-text %s'>
+      <p> Electronegativity </p> <p class="data"> : %s </p>
+      <img class="copy" src="res/copy_icon_white.png"/>
+      <img class="help tooltipcontainer" src="res/help_icon_white.png"/>
+      <p class="tooltip">The electronegativity of an atom is its ability to attract the shared pair of electrons in a covalent bond. Here it is measure using the Pauling scale.</p>
+    </div>
   </div>
 </div>
 <div id="snackbar">Text copied to clipboard</div>
@@ -75,4 +82,6 @@
   12 - type
   13 - statecss
   14 - state
+  15 - encss
+  16 - en
   -->

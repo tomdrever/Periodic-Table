@@ -1,5 +1,5 @@
 # Material design inspired periodic table
-Currently looks OK, and that's about it.
+Based on the OCR A-Level Chemistry course.
 
 ---
 

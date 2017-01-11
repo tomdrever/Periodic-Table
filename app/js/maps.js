@@ -34,5 +34,32 @@ module.exports = {
 
   getStateMap: function() {
     return stateMap
+  },
+  getElectronegativityClass: function(electronegativity) {
+    var enclass = "";
+    if (electronegativity < 0.4) {
+      return "en-none"
+    } else if (isBetween(electronegativity, 0.5, 1)) {
+      return "en-one"
+    } else if (isBetween(electronegativity, 1, 1.5)) {
+      return "en-two"
+    } else if (isBetween(electronegativity, 1.5, 2)) {
+      return "en-three"
+    } else if (isBetween(electronegativity, 2, 2.5)) {
+      return "en-four"
+    } else if (isBetween(electronegativity, 2.5, 3)) {
+      return "en-five"
+    } else if (isBetween(electronegativity, 3, 3.5)) {
+      return "en-six"
+    } else if (isBetween(electronegativity, 3.5, 4)) {
+      return "en-seven"
+    } else {
+      return "en-none"
+    }
   }
+
+}
+
+function isBetween(number, min, max) {
+  return number >= min && number < max
 }

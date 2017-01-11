@@ -6,7 +6,8 @@
     "Symbol": "H",
     "Block": "s",
     "Type": "Nonmetal",
-    "State": "Gas"
+    "State": "Gas",
+    "Electronegativity": 2.2
   },
   {
     "AtomicNumber": 2,
@@ -15,7 +16,8 @@
     "Symbol": "He",
     "Block": "s",
     "Type": "Noble gas",
-    "State": "Gas"
+    "State": "Gas",
+    "Electronegativity": null
   },
   {
     "AtomicNumber": 3,
@@ -24,7 +26,8 @@
     "Symbol": "Li",
     "Block": "s",
     "Type": "Alkali metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 0.98
   },
   {
     "AtomicNumber": 4,
@@ -33,7 +36,8 @@
     "Symbol": "Be",
     "Block": "s",
     "Type": "Alkaline earth metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.57
   },
   {
     "AtomicNumber": 5,
@@ -42,7 +46,8 @@
     "Symbol": "B",
     "Block": "p",
     "Type": "Metalloid",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 2.04
   },
   {
     "AtomicNumber": 6,
@@ -51,7 +56,8 @@
     "Symbol": "C",
     "Block": "p",
     "Type": "Nonmetal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 2.55
   },
   {
     "AtomicNumber": 7,
@@ -60,7 +66,8 @@
     "Symbol": "N",
     "Block": "p",
     "Type": "Nonmetal",
-    "State": "Gas"
+    "State": "Gas",
+    "Electronegativity": 3.04
   },
   {
     "AtomicNumber": 8,
@@ -69,7 +76,8 @@
     "Symbol": "O",
     "Block": "p",
     "Type": "Nonmetal",
-    "State": "Gas"
+    "State": "Gas",
+    "Electronegativity": 3.44
   },
   {
     "AtomicNumber": 9,
@@ -78,7 +86,8 @@
     "Symbol": "F",
     "Block": "p",
     "Type": "Halogen",
-    "State": "Gas"
+    "State": "Gas",
+    "Electronegativity": 3.98
   },
   {
     "AtomicNumber": 10,
@@ -87,7 +96,8 @@
     "Symbol": "Ne",
     "Block": "p",
     "Type": "Noble gas",
-    "State": "Gas"
+    "State": "Gas",
+    "Electronegativity": null
   },
   {
     "AtomicNumber": 11,
@@ -96,7 +106,8 @@
     "Symbol": "Na",
     "Block": "s",
     "Type": "Alkali metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 0.93
   },
   {
     "AtomicNumber": 12,
@@ -105,7 +116,8 @@
     "Symbol": "Mg",
     "Block": "s",
     "Type": "Alkaline earth metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.31
   },
   {
     "AtomicNumber": 13,
@@ -114,7 +126,8 @@
     "Symbol": "Al",
     "Block": "p",
     "Type": "Other metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.61
   },
   {
     "AtomicNumber": 14,
@@ -123,7 +136,8 @@
     "Symbol": "Si",
     "Block": "p",
     "Type": "Metalloid",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.9
   },
   {
     "AtomicNumber": 15,
@@ -132,7 +146,8 @@
     "Symbol": "P",
     "Block": "p",
     "Type": "Nonmetal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 2.19
   },
   {
     "AtomicNumber": 16,
@@ -141,7 +156,8 @@
     "Symbol": "S",
     "Block": "p",
     "Type": "Nonmetal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 2.58
   },
   {
     "AtomicNumber": 17,
@@ -150,7 +166,8 @@
     "Symbol": "Cl",
     "Block": "p",
     "Type": "Halogen",
-    "State": "Gas"
+    "State": "Gas",
+    "Electronegativity": 3.16
   },
   {
     "AtomicNumber": 18,
@@ -159,7 +176,8 @@
     "Symbol": "Ar",
     "Block": "p",
     "Type": "Noble gas",
-    "State": "Gas"
+    "State": "Gas",
+    "Electronegativity": null
   },
   {
     "AtomicNumber": 19,
@@ -168,7 +186,8 @@
     "Symbol": "K",
     "Block": "s",
     "Type": "Alkali metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 0.82
   },
   {
     "AtomicNumber": 20,
@@ -177,7 +196,8 @@
     "Symbol": "Ca",
     "Block": "s",
     "Type": "Alkaline earth metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1
   },
   {
     "AtomicNumber": 21,
@@ -186,7 +206,8 @@
     "Symbol": "Sc",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.36
   },
   {
     "AtomicNumber": 22,
@@ -195,7 +216,8 @@
     "Symbol": "Ti",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.54
   },
   {
     "AtomicNumber": 23,
@@ -204,7 +226,8 @@
     "Symbol": "V",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.63
   },
   {
     "AtomicNumber": 24,
@@ -213,7 +236,8 @@
     "Symbol": "Cr",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.66
   },
   {
     "AtomicNumber": 25,
@@ -222,7 +246,8 @@
     "Symbol": "Mn",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.55
   },
   {
     "AtomicNumber": 26,
@@ -231,7 +256,8 @@
     "Symbol": "Fe",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.83
   },
   {
     "AtomicNumber": 27,
@@ -240,7 +266,8 @@
     "Symbol": "Co",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.88
   },
   {
     "AtomicNumber": 28,
@@ -249,7 +276,8 @@
     "Symbol": "Ni",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.91
   },
   {
     "AtomicNumber": 29,
@@ -258,7 +286,8 @@
     "Symbol": "Cu",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.9
   },
   {
     "AtomicNumber": 30,
@@ -267,7 +296,8 @@
     "Symbol": "Zn",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.65
   },
   {
     "AtomicNumber": 31,
@@ -276,7 +306,8 @@
     "Symbol": "Ga",
     "Block": "p",
     "Type": "Other metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.81
   },
   {
     "AtomicNumber": 32,
@@ -285,7 +316,8 @@
     "Symbol": "Ge",
     "Block": "p",
     "Type": "Metalloid",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 2.01
   },
   {
     "AtomicNumber": 33,
@@ -294,7 +326,8 @@
     "Symbol": "As",
     "Block": "p",
     "Type": "Metalloid",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 2.18
   },
   {
     "AtomicNumber": 34,
@@ -303,7 +336,8 @@
     "Symbol": "Se",
     "Block": "p",
     "Type": "Nonmetal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 2.55
   },
   {
     "AtomicNumber": 35,
@@ -312,7 +346,8 @@
     "Symbol": "Br",
     "Block": "p",
     "Type": "Halogen",
-    "State": "Liquid"
+    "State": "Liquid",
+    "Electronegativity": 2.96
   },
   {
     "AtomicNumber": 36,
@@ -321,7 +356,8 @@
     "Symbol": "Kr",
     "Block": "p",
     "Type": "Noble gas",
-    "State": "Gas"
+    "State": "Gas",
+    "Electronegativity": 3
   },
   {
     "AtomicNumber": 37,
@@ -330,7 +366,8 @@
     "Symbol": "Rb",
     "Block": "s",
     "Type": "Alkali metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 0.82
   },
   {
     "AtomicNumber": 38,
@@ -339,7 +376,8 @@
     "Symbol": "Sr",
     "Block": "s",
     "Type": "Alkaline earth metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 0.95
   },
   {
     "AtomicNumber": 39,
@@ -348,7 +386,8 @@
     "Symbol": "Y",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.22
   },
   {
     "AtomicNumber": 40,
@@ -357,7 +396,8 @@
     "Symbol": "Zr",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.33
   },
   {
     "AtomicNumber": 41,
@@ -366,7 +406,8 @@
     "Symbol": "Nb",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.6
   },
   {
     "AtomicNumber": 42,
@@ -375,7 +416,8 @@
     "Symbol": "Mo",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 2.16
   },
   {
     "AtomicNumber": 43,
@@ -384,7 +426,8 @@
     "Symbol": "Tc",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.9
   },
   {
     "AtomicNumber": 44,
@@ -393,7 +436,8 @@
     "Symbol": "Ru",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 2.2
   },
   {
     "AtomicNumber": 45,
@@ -402,7 +446,8 @@
     "Symbol": "Rh",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 2.28
   },
   {
     "AtomicNumber": 46,
@@ -411,7 +456,8 @@
     "Symbol": "Pd",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 2.2
   },
   {
     "AtomicNumber": 47,
@@ -420,7 +466,8 @@
     "Symbol": "Ag",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.93
   },
   {
     "AtomicNumber": 48,
@@ -429,7 +476,8 @@
     "Symbol": "Cd",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.69
   },
   {
     "AtomicNumber": 49,
@@ -438,7 +486,8 @@
     "Symbol": "In",
     "Block": "p",
     "Type": "Other metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.78
   },
   {
     "AtomicNumber": 50,
@@ -447,7 +496,8 @@
     "Symbol": "Sn",
     "Block": "p",
     "Type": "Other metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.96
   },
   {
     "AtomicNumber": 51,
@@ -456,7 +506,8 @@
     "Symbol": "Sb",
     "Block": "p",
     "Type": "Metalloid",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 2.05
   },
   {
     "AtomicNumber": 52,
@@ -465,7 +516,8 @@
     "Symbol": "Te",
     "Block": "p",
     "Type": "Metalloid",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 2.1
   },
   {
     "AtomicNumber": 53,
@@ -474,7 +526,8 @@
     "Symbol": "I",
     "Block": "p",
     "Type": "Halogen",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 2.66
   },
   {
     "AtomicNumber": 54,
@@ -483,7 +536,8 @@
     "Symbol": "Xe",
     "Block": "p",
     "Type": "Noble gas",
-    "State": "Gas"
+    "State": "Gas",
+    "Electronegativity": 2.6
   },
   {
     "AtomicNumber": 55,
@@ -492,7 +546,8 @@
     "Symbol": "Cs",
     "Block": "s",
     "Type": "Alkali metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 0.79
   },
   {
     "AtomicNumber": 56,
@@ -501,7 +556,8 @@
     "Symbol": "Ba",
     "Block": "s",
     "Type": "Alkaline earth metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 0.89
   },
   {
     "AtomicNumber": 57,
@@ -510,7 +566,8 @@
     "Symbol": "La",
     "Block": "d",
     "Type": "Lanthanide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.1
   },
   {
     "AtomicNumber": 58,
@@ -519,7 +576,8 @@
     "Symbol": "Ce",
     "Block": "f",
     "Type": "Lanthanide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.12
   },
   {
     "AtomicNumber": 59,
@@ -528,7 +586,8 @@
     "Symbol": "Pr",
     "Block": "f",
     "Type": "Lanthanide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.13
   },
   {
     "AtomicNumber": 60,
@@ -537,7 +596,8 @@
     "Symbol": "Nd",
     "Block": "f",
     "Type": "Lanthanide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.14
   },
   {
     "AtomicNumber": 61,
@@ -546,7 +606,8 @@
     "Symbol": "Pm",
     "Block": "f",
     "Type": "Lanthanide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.13
   },
   {
     "AtomicNumber": 62,
@@ -555,7 +616,8 @@
     "Symbol": "Sm",
     "Block": "f",
     "Type": "Lanthanide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.17
   },
   {
     "AtomicNumber": 63,
@@ -564,7 +626,8 @@
     "Symbol": "Eu",
     "Block": "f",
     "Type": "Lanthanide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.2
   },
   {
     "AtomicNumber": 64,
@@ -573,7 +636,8 @@
     "Symbol": "Gd",
     "Block": "f",
     "Type": "Lanthanide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.2
   },
   {
     "AtomicNumber": 65,
@@ -582,7 +646,8 @@
     "Symbol": "Tb",
     "Block": "f",
     "Type": "Lanthanide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.1
   },
   {
     "AtomicNumber": 66,
@@ -591,7 +656,8 @@
     "Symbol": "Dy",
     "Block": "f",
     "Type": "Lanthanide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.22
   },
   {
     "AtomicNumber": 67,
@@ -600,7 +666,8 @@
     "Symbol": "Ho",
     "Block": "f",
     "Type": "Lanthanide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.23
   },
   {
     "AtomicNumber": 68,
@@ -609,7 +676,8 @@
     "Symbol": "Tm",
     "Block": "f",
     "Type": "Lanthanide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.25
   },
   {
     "AtomicNumber": 69,
@@ -618,7 +686,8 @@
     "Symbol": "Er",
     "Block": "f",
     "Type": "Lanthanide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.24
   },
   {
     "AtomicNumber": 70,
@@ -627,7 +696,8 @@
     "Symbol": "Yb",
     "Block": "f",
     "Type": "Lanthanide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.1
   },
   {
     "AtomicNumber": 71,
@@ -636,7 +706,8 @@
     "Symbol": "Lu",
     "Block": "f",
     "Type": "Lanthanide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.27
   },
   {
     "AtomicNumber": 72,
@@ -645,7 +716,8 @@
     "Symbol": "Hf",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.3
   },
   {
     "AtomicNumber": 73,
@@ -654,7 +726,8 @@
     "Symbol": "Ta",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.5
   },
   {
     "AtomicNumber": 74,
@@ -663,7 +736,8 @@
     "Symbol": "W",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 2.36
   },
   {
     "AtomicNumber": 75,
@@ -672,7 +746,8 @@
     "Symbol": "Re",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.9
   },
   {
     "AtomicNumber": 76,
@@ -681,7 +756,8 @@
     "Symbol": "Os",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 2.2
   },
   {
     "AtomicNumber": 77,
@@ -690,7 +766,8 @@
     "Symbol": "Ir",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 2.28
   },
   {
     "AtomicNumber": 78,
@@ -699,7 +776,8 @@
     "Symbol": "Pt",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 2.54
   },
   {
     "AtomicNumber": 79,
@@ -708,7 +786,8 @@
     "Symbol": "Au",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 2.54
   },
   {
     "AtomicNumber": 80,
@@ -717,7 +796,8 @@
     "Symbol": "Hg",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Liquid"
+    "State": "Liquid",
+    "Electronegativity": 2
   },
   {
     "AtomicNumber": 81,
@@ -726,7 +806,8 @@
     "Symbol": "Tl",
     "Block": "p",
     "Type": "Other metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.62
   },
   {
     "AtomicNumber": 82,
@@ -735,7 +816,8 @@
     "Symbol": "Pb",
     "Block": "p",
     "Type": "Other metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 2.33
   },
   {
     "AtomicNumber": 83,
@@ -744,7 +826,8 @@
     "Symbol": "Bi",
     "Block": "p",
     "Type": "Other metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 2.02
   },
   {
     "AtomicNumber": 84,
@@ -753,7 +836,8 @@
     "Symbol": "Po",
     "Block": "p",
     "Type": "Metalloid",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 2
   },
   {
     "AtomicNumber": 85,
@@ -762,7 +846,8 @@
     "Symbol": "At",
     "Block": "p",
     "Type": "Halogen",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 2.2
   },
   {
     "AtomicNumber": 86,
@@ -771,7 +856,8 @@
     "Symbol": "Rn",
     "Block": "p",
     "Type": "Noble gas",
-    "State": "Gas"
+    "State": "Gas",
+    "Electronegativity": null
   },
   {
     "AtomicNumber": 87,
@@ -780,7 +866,8 @@
     "Symbol": "Fr",
     "Block": "s",
     "Type": "Alkali metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 0.7
   },
   {
     "AtomicNumber": 88,
@@ -789,7 +876,8 @@
     "Symbol": "Ra",
     "Block": "s",
     "Type": "Alkaline earth metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 0.9
   },
   {
     "AtomicNumber": 89,
@@ -798,7 +886,8 @@
     "Symbol": "Ac",
     "Block": "d",
     "Type": "Actinide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.1
   },
   {
     "AtomicNumber": 90,
@@ -807,7 +896,8 @@
     "Symbol": "Th",
     "Block": "f",
     "Type": "Actinide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.3
   },
   {
     "AtomicNumber": 91,
@@ -816,7 +906,8 @@
     "Symbol": "Pa",
     "Block": "f",
     "Type": "Actinide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.5
   },
   {
     "AtomicNumber": 92,
@@ -825,7 +916,8 @@
     "Symbol": "U",
     "Block": "f",
     "Type": "Actinide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.38
   },
   {
     "AtomicNumber": 93,
@@ -834,7 +926,8 @@
     "Symbol": "Np",
     "Block": "f",
     "Type": "Actinide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.36
   },
   {
     "AtomicNumber": 94,
@@ -843,7 +936,8 @@
     "Symbol": "Pu",
     "Block": "f",
     "Type": "Actinide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.28
   },
   {
     "AtomicNumber": 95,
@@ -852,7 +946,8 @@
     "Symbol": "Am",
     "Block": "f",
     "Type": "Actinide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.3
   },
   {
     "AtomicNumber": 96,
@@ -861,7 +956,8 @@
     "Symbol": "Cm",
     "Block": "f",
     "Type": "Actinide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.28
   },
   {
     "AtomicNumber": 97,
@@ -870,7 +966,8 @@
     "Symbol": "Bk",
     "Block": "f",
     "Type": "Actinide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.3
   },
   {
     "AtomicNumber": 98,
@@ -879,7 +976,8 @@
     "Symbol": "Cf",
     "Block": "f",
     "Type": "Actinide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.3
   },
   {
     "AtomicNumber": 99,
@@ -888,7 +986,8 @@
     "Symbol": "Es",
     "Block": "f",
     "Type": "Actinide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.3
   },
   {
     "AtomicNumber": 100,
@@ -897,7 +996,8 @@
     "Symbol": "Fm",
     "Block": "f",
     "Type": "Actinide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.3
   },
   {
     "AtomicNumber": 101,
@@ -906,7 +1006,8 @@
     "Symbol": "Md",
     "Block": "f",
     "Type": "Actinide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.3
   },
   {
     "AtomicNumber": 102,
@@ -915,7 +1016,8 @@
     "Symbol": "No",
     "Block": "f",
     "Type": "Actinide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.3
   },
   {
     "AtomicNumber": 103,
@@ -924,7 +1026,8 @@
     "Symbol": "Lr",
     "Block": "f",
     "Type": "Actinide",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": 1.3
   },
   {
     "AtomicNumber": 104,
@@ -933,7 +1036,8 @@
     "Symbol": "Rf",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": null
   },
   {
     "AtomicNumber": 105,
@@ -942,7 +1046,8 @@
     "Symbol": "Db",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": null
   },
   {
     "AtomicNumber": 106,
@@ -951,7 +1056,8 @@
     "Symbol": "Sg",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": null
   },
   {
     "AtomicNumber": 107,
@@ -960,7 +1066,8 @@
     "Symbol": "Bh",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": null
   },
   {
     "AtomicNumber": 108,
@@ -969,7 +1076,8 @@
     "Symbol": "Hs",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": null
   },
   {
     "AtomicNumber": 109,
@@ -978,7 +1086,8 @@
     "Symbol": "Mt",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": null
   },
   {
     "AtomicNumber": 110,
@@ -987,7 +1096,8 @@
     "Symbol": "Ds",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": null
   },
   {
     "AtomicNumber": 111,
@@ -996,7 +1106,8 @@
     "Symbol": "Rg",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": null
   },
   {
     "AtomicNumber": 112,
@@ -1005,7 +1116,8 @@
     "Symbol": "Cn",
     "Block": "d",
     "Type": "Transition metal",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": null
   },
   {
     "AtomicNumber": 113,
@@ -1014,7 +1126,8 @@
     "Symbol": "Uut",
     "Block": "p",
     "Type": "Unknown",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": null
   },
   {
     "AtomicNumber": 114,
@@ -1023,7 +1136,8 @@
     "Symbol": "Fl",
     "Block": "p",
     "Type": "Unknown",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": null
   },
   {
     "AtomicNumber": 115,
@@ -1032,7 +1146,8 @@
     "Symbol": "Uup",
     "Block": "p",
     "Type": "Unknown",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": null
   },
   {
     "AtomicNumber": 116,
@@ -1041,7 +1156,8 @@
     "Symbol": "Lv",
     "Block": "p",
     "Type": "Unknown",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": null
   },
   {
     "AtomicNumber": 117,
@@ -1050,7 +1166,8 @@
     "Symbol": "Uus",
     "Block": "p",
     "Type": "Unknown",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": null
   },
   {
     "AtomicNumber": 118,
@@ -1059,6 +1176,7 @@
     "Symbol": "Uuo",
     "Block": "p",
     "Type": "Unknown",
-    "State": "Solid"
+    "State": "Solid",
+    "Electronegativity": null
   }
 ]

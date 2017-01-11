@@ -4,7 +4,7 @@ var blockMap = maps.getBlockMap()
 var typeMap = maps.getTypeMap()
 var stateMap = maps.getStateMap()
 
-var colourClasses = ["type", "block", "state"]
+var colourClasses = ["type", "block", "state", "electronegativity"]
 
 // Initial colouring
 onColourByClicked("type")
@@ -48,20 +48,26 @@ function toggleColourClass(colourClass) {
         var elementType = cell.getAttribute("element-type")
         var elementBlock = cell.getAttribute("element-block")
         var elementState = cell.getAttribute("element-state")
+        var elementElectronegativity = cell.getAttribute("element-electronegativity")
 
         var classesToRemove, classToAdd
 
         // Define classes to add and remove based on the option clicked
         if (colourClass === "type") {
-          classesToRemove = [blockMap[elementBlock], stateMap[elementState]]
+          classesToRemove = [blockMap[elementBlock], stateMap[elementState], maps.getElectronegativityClass(elementElectronegativity)]
           classToAdd = typeMap[elementType]
         } else if (colourClass === "state") {
-          classesToRemove = [blockMap[elementBlock], typeMap[elementType]]
+          classesToRemove = [blockMap[elementBlock], typeMap[elementType], maps.getElectronegativityClass(elementElectronegativity)]
           classToAdd = stateMap[elementState]
-        } else {
-          classesToRemove = [typeMap[elementType], stateMap[elementState]]
+        } else if (colourClass === "block"){
+          classesToRemove = [typeMap[elementType], stateMap[elementState], maps.getElectronegativityClass(elementElectronegativity)]
           classToAdd = blockMap[elementBlock]
+        } else if (colourClass === "electronegativity"){
+          classesToRemove = [typeMap[elementType], stateMap[elementState], blockMap[elementBlock]]
+          classToAdd = maps.getElectronegativityClass(elementElectronegativity)
         }
+
+        console.log(elementElectronegativity)
 
         // Remove classes that colour
         for (var k = 0; k < classesToRemove.length; k++) {
@@ -89,7 +95,7 @@ function onColourByClicked(colourClass) {
   var undesiredColourClasses = colourClasses.slice()
   undesiredColourClasses.splice(undesiredColourClasses.indexOf(colourClass), 1)
 
-  // For each class we don't won't, remove the "visible" class from the button's icon
+  // For each class we don't want, remove the "visible" class from the button's icon
   for (var i = 0; i < undesiredColourClasses.length; i++) {
     var undesiredColourClass = undesiredColourClasses[i]
     document.getElementById("colour-by-" + undesiredColourClass + "-done").classList.remove("icon-visible")
