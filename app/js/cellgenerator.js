@@ -91,7 +91,7 @@ module.exports = {
         // Remove after animation
         setTimeout(function() {
           modalToRemove.remove()
-        }, 400)
+        }, 350) // Animation is 400, so the modal will defo be removed before it finishes
       }
 
       document.getElementsByTagName("BODY")[0].appendChild(modalContainer)
@@ -125,6 +125,7 @@ function addCopy() {
       // Display snackbar
       var snackbar = document.getElementById("snackbar")
       snackbar.className = "show";
+      snackbar.innerText = data + 'copied to clipboard';
       console.log("display")
       setTimeout(function() {
          snackbar.className = snackbar.className.replace("show", "");

@@ -49,7 +49,13 @@ body.appendChild(table)
 // Event listener for escape key for element modal
 document.addEventListener('keydown', event => {
     if (event.key === 'Escape' || event.keyCode === 27) {
-        document.getElementById("modal").remove()
+        var modalToRemove = document.getElementById("modal")
+        modalToRemove.getElementsByClassName("modal-content")[0].classList.add("animate-out")
+
+        // Remove after animation
+        setTimeout(function() {
+          modalToRemove.remove()
+        }, 350) // Animation is 400, so the modal will defo be removed before it finishes
     }
 });
 
