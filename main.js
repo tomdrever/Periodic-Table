@@ -1,4 +1,4 @@
-const {app, BrowserWindow} = require('electron')
+const {app, BrowserWindow, globalShortcut} = require('electron')
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -12,14 +12,16 @@ function createWindow () {
       height: 600
     })
 
+  win.once('ready-to-show', () => {
+    win.show()
+  })
+
   win.setMenu(null)
-
-  win.toggleDevTools()
-
-  win.maximize()
 
   // and load the index.html of the app.
   win.loadURL(`file://${__dirname}/app/index.html`)
+
+  win.maximize()
 
   // Emitted when the window is closed.
   win.on('closed', () => {
@@ -27,6 +29,14 @@ function createWindow () {
     // in an array if your app supports multi windows, this is the time
     // when you should delete the corresponding element.
     win = null
+  })
+
+  globalShortcut.register('F11', () => {
+    win.setFullScreen(!win.isFullScreen())
+  })
+
+  globalShortcut.register('F3', () => {
+    win.toggleDevTools()
   })
 }
 
