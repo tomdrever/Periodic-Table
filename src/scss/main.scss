@@ -1,5 +1,4 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto+Condensed';
-
 @import 'table';
 @import 'modal';
 @import 'vars';
@@ -18,7 +17,7 @@ html, body {
 
   color: $light-grey;
   background-color: $dark-blue-grey;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 
   display: flex;
   flex-direction: row;
@@ -54,7 +53,7 @@ html, body {
       left: -11em;
 
       background-color: $light-blue-grey;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
       border-radius: 2px;
 
       overflow-x: hidden;
@@ -87,10 +86,14 @@ html, body {
           background-color: darken($light-blue-grey, $lighten);
         }
 
-        .icon-visible { visibility: visible}
+        .icon-visible {
+          visibility: visible
+        }
       }
     }
 
-    .show { display: inline-block;}
+    .show {
+      display: inline-block;
+    }
   }
 }

@@ -18,29 +18,30 @@ tbody.id = "tbody"
 var periodCounter = 1;
 
 for (var i = 0; i < lines.length; i++) {
+    var groupCounter = 1;
 
-  var groupCounter = 1;
+    // Create row
+    var trow = document.createElement('tr')
+    // Split line(string) into array of ints
+    var line = lines[i].split(',')
 
-  // Create row
-  var trow = document.createElement('tr')
-  // Split line(string) into array of ints
-  var line = lines[i].split(',')
+    for (var j = 0; j < line.length; j++) {
 
-  for (var j = 0; j < line.length; j++) {
+        // Create cell
+        var tcell = newCell(parseInt(line[j]), groupCounter, periodCounter)
 
-    // Create cell
-    var tcell = newCell(parseInt(line[j]), groupCounter, periodCounter)
+        trow.appendChild(tcell)
 
-    trow.appendChild(tcell)
+        groupCounter++
+    }
 
-    groupCounter++
-  }
-
-  // If the row wasn't empty, increase the period counter
-  if (lines[i].indexOf(1) != -1) { periodCounter++ }
+    // If the row wasn't empty, increase the period counter
+    if (lines[i].indexOf(1) != -1) {
+        periodCounter++
+    }
 
 
-  tbody.appendChild(trow)
+    tbody.appendChild(trow)
 }
 
 table.appendChild(tbody)
@@ -53,25 +54,24 @@ document.addEventListener('keydown', event => {
         modalToRemove.getElementsByClassName("modal-content")[0].classList.add("animate-out")
 
         // Remove after animation
-        setTimeout(function() {
-          modalToRemove.remove()
+        setTimeout(function () {
+            modalToRemove.remove()
         }, 350) // Animation is 400, so the modal will defo be removed before it finishes
     }
 });
 
 function newCell(index) {
+    var tcell = document.createElement('td')
 
-  var tcell = document.createElement('td')
+    tcell.classList.add("cell")
 
-  tcell.classList.add("cell")
-
-  if (index != 0) { // Normal cell
-    var element = elements[index-1]
-    element["Group"] = groupCounter;
-    element["Period"] = periodCounter;
-    cellGenerator.createNewElementCell(tcell, element)
-  } else { // Empty space
-    tcell.classList.add("empty")
-  }
-  return tcell;
+    if (index != 0) { // Normal cell
+        var element = elements[index - 1]
+        element["Group"] = groupCounter;
+        element["Period"] = periodCounter;
+        cellGenerator.createNewElementCell(tcell, element)
+    } else { // Empty space
+        tcell.classList.add("empty")
+    }
+    return tcell;
 }
