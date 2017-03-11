@@ -82,7 +82,7 @@ module.exports = {
       modalContainer.id = "modal"
 
       // Format HMTL with data
-      modalContainer.innerHTML += util.format(fs.readFileSync("app/res/modal_html.txt", "utf8"), headerClassName, element.Symbol, element.Name, headerTypeDetails, element.Group, element.Period, String(element.AtomicNumber), (element.AtomicMass != null) ? String(element.AtomicMass) : "Unknown",  blockMap[element.Block], element.Block, typeMap[element.Type], element.Type, stateMap[element.State], element.State, maps.getElectronegativityClass(element.Electronegativity), (element.Electronegativity != null) ? String(element.Electronegativity) : "None")
+      modalContainer.innerHTML += util.format(fs.readFileSync("dist/res/modal_html.txt", "utf8"), headerClassName, element.Symbol, element.Name, headerTypeDetails, element.Group, element.Period, String(element.AtomicNumber), (element.AtomicMass != null) ? String(element.AtomicMass) : "Unknown",  blockMap[element.Block], element.Block, typeMap[element.Type], element.Type, stateMap[element.State], element.State, maps.getElectronegativityClass(element.Electronegativity), (element.Electronegativity != null) ? String(element.Electronegativity) : "None")
 
       modalContainer.getElementsByClassName("modal-close")[0].onclick = function() {
         var modalToRemove = document.getElementById("modal")

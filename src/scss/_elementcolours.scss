@@ -1,8 +1,8 @@
-@import 'vars.scss';
+@import 'vars';
 
 .nonmetal {
   background-color: $purple;
-    &.lightenable:hover {
+  &.lightenable:hover {
     background-color: lighten($purple, $lighten);
   }
 }

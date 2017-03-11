@@ -2,10 +2,10 @@ const fs = require('fs')
 const cellGenerator = require('./js/cellgenerator')
 
 // Get elements data
-var elements = JSON.parse(fs.readFileSync('app/res/elements.json', 'utf8'))
+var elements = JSON.parse(fs.readFileSync('dist/res/elements.json', 'utf8'))
 
 // Read lines from layout file
-var lines = JSON.parse(fs.readFileSync('app/res/layout.json', 'utf8'))
+var lines = JSON.parse(fs.readFileSync('dist/res/layout.json', 'utf8'))
 
 // Create table and load element data and create element
 var body = document.getElementsByTagName('body')[0]

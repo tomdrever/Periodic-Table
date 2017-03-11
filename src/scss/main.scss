@@ -1,12 +1,9 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto+Condensed';
 
-@import 'table.scss';
-
-@import 'modal.scss';
-
-@import 'vars.scss';
-
-@import 'elementcolours.scss';
+@import 'table';
+@import 'modal';
+@import 'vars';
+@import 'elementcolours';
 
 html, body {
   font-family: 'Roboto Condensed', sans-serif;

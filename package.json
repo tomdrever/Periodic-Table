@@ -1,5 +1,22 @@
 {
-  "name": "periodic table",
+  "name": "periodic-table",
+  "private": false,
   "version": "0.1.0",
-  "main": "main.js"
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomdrever/Periodic-Table.git"
+  },
+  "author": "Tom Drever",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomdrever/Periodic-Table/issues"
+  },
+  "homepage": "https://github.com/tomdrever/Periodic-Table",
+  "devDependencies": {
+    "electron": "^1.4.1",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-shell": "^0.5.2"
+  }
 }
