@@ -1,4 +1,4 @@
-const maps = require('./js/maps')
+const maps = require('./maps')
 
 var blockMap = maps.getBlockMap()
 var typeMap = maps.getTypeMap()
@@ -16,7 +16,7 @@ function onOptionsClicked() {
 function hideDropdowns() {
     var dropdowns = document.getElementsByClassName("dropdown")
 
-    for (i = 0; i < dropdowns.length; i++) {
+    for (let i = 0; i < dropdowns.length; i++) {
         var openDropdown = dropdowns[i]
         if (openDropdown.classList.contains('show')) {
             openDropdown.classList.remove('show')
@@ -35,10 +35,10 @@ function toggleColourClass(colourClass) {
     // For every non-empty cell...
     var tbody = document.getElementById("tbody")
 
-    for (i = 0; i < tbody.childNodes.length; i++) {
+    for (let i = 0; i < tbody.childNodes.length; i++) {
         var row = tbody.childNodes[i]
 
-        for (j = 0; j < row.childNodes.length; j++) {
+        for (let j = 0; j < row.childNodes.length; j++) {
             var cell = row.childNodes[j]
 
             if (!cell.classList.contains("empty")) {

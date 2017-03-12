@@ -1,14 +1,13 @@
-const maps = require('./maps')
-const util = require('util')
-const fs = require('fs')
-const {clipboard} = require('electron')
+import maps from './maps'
+import util from 'util'
+import modalHtml from '../../src/html/modal.html'
 
 var blockMap = maps.getBlockMap()
 var typeMap = maps.getTypeMap()
 var stateMap = maps.getStateMap()
 
 module.exports = {
-    createNewElementCell: function (cell, element) {
+    createNewElementCell: function createNewElementCell(cell, element) {
         cell.classList.add("element")
         cell.classList.add("lightenable")
         cell.setAttribute("element-type", element.Type)
@@ -81,7 +80,7 @@ module.exports = {
             modalContainer.id = "modal"
 
             // Format HMTL with data
-            modalContainer.innerHTML += util.format(fs.readFileSync("dist/res/modal_html.txt", "utf8"), headerClassName, element.Symbol, element.Name, headerTypeDetails, element.Group, element.Period, String(element.AtomicNumber), (element.AtomicMass != null) ? String(element.AtomicMass) : "Unknown", blockMap[element.Block], element.Block, typeMap[element.Type], element.Type, stateMap[element.State], element.State, maps.getElectronegativityClass(element.Electronegativity), (element.Electronegativity != null) ? String(element.Electronegativity) : "None")
+            modalContainer.innerHTML += util.format(modalHtml, headerClassName, element.Symbol, element.Name, headerTypeDetails, element.Group, element.Period, String(element.AtomicNumber), (element.AtomicMass != null) ? String(element.AtomicMass) : "Unknown", blockMap[element.Block], element.Block, typeMap[element.Type], element.Type, stateMap[element.State], element.State, maps.getElectronegativityClass(element.Electronegativity), (element.Electronegativity != null) ? String(element.Electronegativity) : "None")
 
             modalContainer.getElementsByClassName("modal-close")[0].onclick = function () {
                 var modalToRemove = document.getElementById("modal")
@@ -101,30 +100,25 @@ module.exports = {
 }
 
 function addCopy() {
-    var copyButtons = document.getElementsByClassName("copy")
+    const copyButtons = document.getElementsByClassName("copy")
 
-    for (var i = 0; i < copyButtons.length; i++) {
+    for (let i = 0; i < copyButtons.length; i++) {
         // Get parent
-        var button = copyButtons[i]
-        var parent = button.parentElement
+        const button = copyButtons[i]
+        const parent = button.parentElement
 
         // Get text (via adjacent text)
-        var text = parent.getElementsByClassName("data")[0].innerHTML
-        text = text.replace(": ", "")
+        const text = parent.querySelector('.data')
 
-        // Set attribute to button, so we can use it in onnlick
-        button.setAttribute("data", text)
-
-        button.onclick = function (e) {
+        button.onclick = function () {
             // Get element data and copy to clipboard
-            var senderButton = e.srcElement
-            var data = senderButton.getAttribute("data")
-            clipboard.writeText(data)
+            text.select()
+            document.execCommand("Copy")
 
             // Display snackbar
             var snackbar = document.getElementById("snackbar")
             snackbar.className = "show";
-            snackbar.innerText = data + 'copied to clipboard';
+            snackbar.innerText = /*text.innerHTML +*/ 'copied to clipboard';
             console.log("display")
             setTimeout(function () {
                 snackbar.className = snackbar.className.replace("show", "");
